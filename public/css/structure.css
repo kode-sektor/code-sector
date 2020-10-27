@@ -1007,7 +1007,7 @@ ul.disc { list-style: disc outside; }
 	text-shadow: ;
 	height: 70px;
 }
-#frontpage-title, .subpage-headers{
+.frontpage-title, .subpage-headers{
 	position: fixed;
 	left: calc(12.5% + 15px);
 	right: calc(12.5% + 15px);
@@ -1025,7 +1025,7 @@ ul.disc { list-style: disc outside; }
 	font-family: sans-serif;	
 	background-color: rgb(63, 34, 80);
 }
-#frontpage-title{
+.frontpage-title{
 	margin: 0;
 	z-index: 99;
 	color: transparent;
