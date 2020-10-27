@@ -2,16 +2,23 @@ import React from 'react'
 
 const Header = () => {
 
+    // navbarHandler = () => {
+    //     this.state.navbarOpen ? 
+    //         this.setState ({navbarOpen : false, css : 'collapse navbar-collapse'}) : 
+    //         this.setState ({navbarOpen : true, css : 'collapse navbar-collapse show'})
+    // }
+
+
     return (
-        
-        <header id="page-header" className="">
+
+        <header id="page-header" className="page-header">
 
             <a className="brand" href="index.html">
                 <img src="images/images/kode-sektor-logo-sm.png"/>
             </a>
         
-            <div id="subpage-header">
-                <h1 id="frontpage-title"><span>W</span><span>e</span><span>b </span> <span>S</span><span>o</span><span>l</span><span>u</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></h1>
+            <div id="subpage-header" className="subpage-header">
+                <h1 id="frontpage-title" className="frontpage-title"><span>W</span><span>e</span><span>b </span> <span>S</span><span>o</span><span>l</span><span>u</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></h1>
             </div> 
         
             <div className="main-header">

@@ -97,17 +97,14 @@
 .clearfix {
   *zoom: 1;
 }
-
 .cf:before,
 .cf:after {
 	content: " ";
 	display: table;
 }
-
 .cf:after {
 	clear: both;
 }
-
 .clearfix:after, .group:after, .clearfix:before, .group:before {
 	clear: both;
 	content: '\0020';
@@ -116,16 +113,13 @@
 	width: 0;
 	height: 0;
 }	
-
 .clearFix:before, .clearFix:after {
 	content: '';
 	display: table;
 }
-
 .clearFix:after{
 	clear: both;
 }
-
 *, *:before, *:after {
 	margin: 0;
 	padding: 0;
@@ -137,7 +131,7 @@ body{
 	min-width: 320px;
 }
 html{
-	font-smoothing: antialiased;	
+	-webkit-font-smoothing: antialiased;	
 	line-height: 1.5em; 				
 	background:;
 	-webkit-text-size-adjust: 100%;
@@ -151,7 +145,7 @@ body{
 	background-image: ;    
 	letter-spacing:0.075em;
 	line-height: 1.65em;
-	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	font-weight: normal;
 	backface-visibility: hidden;
 	overflow-x: hidden !important;
@@ -993,7 +987,7 @@ ul.disc { list-style: disc outside; }
 
 /*THE HEADER*/
 
-#page-header{
+.page-header{
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -1006,7 +1000,7 @@ ul.disc { list-style: disc outside; }
 	top: 5px;
 	display: inline-block;
 }
-#subpage-header{
+.subpage-header{
 	text-transform: uppercase;
 	word-spacing: ;
 	letter-spacing: ;
