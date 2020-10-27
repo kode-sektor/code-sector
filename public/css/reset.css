@@ -1,0 +1,1313 @@
+
+/*
+/*
+
+=====================================================================
+*   Power Outfitters v1.0 Default Stylesheet
+*   url: styleshout.com
+*   08-03-2016
+=====================================================================
+
+
+ 
+ __   __   												
+|  |_/  /
+|	   /	
+|     /	  __ ____   __
+|  '  \	 / _` |	|  | |					
+|  |\  \| (_| | |__| |
+|__| \__\\__,_|____. | 				
+				   | |	
+			  _____| |
+ 			 |_______|	
+                                                                 
+
+
+
+
+=====================================================================*/
+
+
+
+/*=====================================================================
+*   LAIR v1.0 Default Stylesheet
+*   03-07-2017
+=====================================================================
+
+TOC:
+a. Webfonts and Icon fonts
+b. Reset
+c. Default Styles
+   i. Document
+   ii. Headers
+   iii. Links
+   iv. Images
+   v. Button
+   vi. Form
+   vii. Other elements
+d. Arrangement
+e. Color Pallette
+f. Misc.
+   
+   
+   
+   
+
+=====================================================================  */
+
+/* ------------------------------------------------------------------ */
+/* a. Webfonts and Icon fonts
+
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+
+*/
+
+ 
+ 
+/* b. Reset
+
+ ------------------------------------------------------------------ */
+ 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+	
+html{
+	font-smoothing: antialiased;	
+	line-height: 1.5em; 				
+	background:;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+	
+body{
+	min-height:100%;
+	padding-top: ; /*if header is fixed, so that next content won't be behind header. Padding-top should be equal height of header*/
+	font:17px Calibri, "Trebuchet MS", sans-serif;
+	/font-size: 15pt;
+	color:#6a6a6a; /*#444, */
+	background: /*#fff*/;	
+	background-image: ;    
+	line-height: inherit; /*1.42857143*/
+	letter-spacing:0.075em;
+	line-height: 1.65em;
+	font-smoothing: antialiased;
+	font-weight: normal;
+	backface-visibility: hidden;
+	overflow-x: hidden !important;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;	  
+}
+
+
+
+/* c. Default Styles
+
+ ------------------------------------------------------------------ */
+ 
+ 	
+	/* i. Document
+
+ ------------------------------------------------------------------ */
+	
+
+	/* ii. Headers
+
+ ------------------------------------------------------------------ */
+			
+			
+body > header > h1{
+}
+	
+  
+/*
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	color: #262626;
+  }
+*/		
+			  
+h1, h2, h3, h4, h5, h6 {
+color: black;
+margin-bottom: 10px;
+/*font-family:"librebaskerville italic", sans-serif;
+font-style:italic*	==you have to add this if you want the italic style*/
+font-weight:;
+}
+  
+
+
+	/* iii. Links
+
+ ------------------------------------------------------------------ */
+ 
+
+a:link, a:visited {
+   text-decoration: none;
+   outline: 0;
+   color: #007fff;
+   cursor: pointer;
+   transition: color .3s ease-in-out;
+   border-bottom: /*dotted 1px rgba(160, 160, 160, 0.65)*/;
+   transition: color 0.2s ease, border-bottom-color 0.2s ease;		
+}
+
+a:link{
+	/color: #6a6a6a;
+}
+
+a:visited{
+	/color: #333399;
+}
+
+a:active{
+	color: #0033ff;
+	text-decoration: underline;
+}
+
+a:link:hover, a:link:focus {
+  outline-offset: -2px;
+  text-decoration: none;
+  color: rgb(136,13,30 );
+  
+ }
+
+a.dotted-link {
+  border-bottom: 1px dotted #778492;
+  color: #778492;
+}
+
+p a, p a:visited { line-height: inherit; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; text-decoration: none; color: inherit;}	
+
+footer a:link{
+	color: rgba(27,91,46,0.9);
+}
+
+footer a:link:hover{
+	color: rgba(27,91,48, .3);
+}
+
+a[href^="http://"]{		/*target external links. Also use https for secured links*/
+}
+
+a[href$="pdf"]{			/*Link to a pdf resource*/	
+}
+
+/*	a::after{			// All links on page
+
+	content: " (outside link)";		//literal string
+	content: " [" attr(href) "]";	//concatenation
+	
+	color: #666;
+	font-size: .9em;	
+	
+	//Or use font-awesome object like so:  <h4><a>Latest Links</a><i class="fa fa-external-link"></i></h4>
+	
+}*/
+
+a::after{
+}
+	
+
+	/* iv. Images
+
+ ------------------------------------------------------------------ */
+
+img {
+	/*display: block;*/
+   max-width: 100%;
+   height: auto;
+   border: none;
+   overflow: hidden;
+   margin: auto;			
+}
+
+p img { margin: 0; }	
+
+[class*="img-frame"], [class*="logo-frame"]{	/*object:	<div class="image"><img/></div>	*/
+	position: relative;	
+	display: block;
+	overflow: hidden;	
+	vertical-align: bottom;	
+	border: 0;
+	padding: 0;
+	max-width: 100%;	
+	/*min-width: 4em;	*/
+} 
+
+[class*="img-frame"] img, [class*="logo-frame"] img{
+	width: 100%;
+}
+		
+@media screen and (max-width: 991px){	/*center .img-frame inside .column*/
+	
+	[class*="img-frame"]{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	body > footer .logo-frame{
+		width: 30%;
+	}
+	
+}
+	
+@media only screen and (max-width: 767px) and (min-width: 461px){
+	
+	[class*="align-center"] [class*="column"] *:not(.logo-frame) img{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		max-width: 50%;
+	}	
+	
+}		
+
+
+
+	/* iv. Lists
+
+ ------------------------------------------------------------------ */
+ 
+ 
+ul { list-style: none outside; }
+			
+ol { list-style: decimal; }
+
+ol, ul.square, ul.circle, ul.disc { margin-left: 22px; }
+
+ul.square { list-style: square outside; }
+
+ul.circle { list-style: circle outside; }
+
+ul.disc { list-style: disc outside; }
+
+
+
+
+	/* v. Buttons
+
+ ------------------------------------------------------------------ */
+ 
+  
+ 
+ 
+ 
+ 	/* v. Forms
+
+ ------------------------------------------------------------------ */
+ 
+ form ol{
+	 list-style: none;
+ }
+
+
+  input[type="text"], input[type="password"], input[type="email"], textarea, select {
+	  border: 0;
+	  vertical-align: middle;
+      background-color: #373233;
+	  font-family: consolas, monospace, "Times New Roman", Times, serif;
+	  letter-spacing: 2px;
+	  font-size: 15px;
+	  color: white;	  
+  }
+	
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, select:focus{
+	color: azure;
+	background-color: #11abb0;
+  }
+  
+  ::-webkit-input-placeholder {
+	   color: rgba(0, 0, 0, 0.4);
+	   letter-spacing: 1px;
+	}
+	
+	::-moz-input-placeholder {
+	   color: rgba(0, 0, 0, 0.4);
+	   letter-spacing: 1px;
+	}
+
+  
+  
+ 
+ 	/* vi. Other elements
+
+ ------------------------------------------------------------------ */
+ 
+ 	/*May not be extra fine if it falls on an element (even <body>)
+	with a white background. Preferably a non-white background inside
+	a sectioning element*/
+ 
+ 	hr{
+		border: solid #E3E3E3;
+		border-width: 1px 0 0;
+		clear: both;
+		height: 0;
+		max-width: 1070px;
+		line-height: 0;
+	    border-top-color: rgba(150, 150, 150, .5);
+	}
+	
+	p { margin: 0 0 12px; }
+ 
+ 
+  
+/* d. Arrangement
+
+ ------------------------------------------------------------------ */
+
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.clearfix:after, .group:after, .clearfix:before, .group:before {
+	clear: both;
+	content: '\0020';
+	display: block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}	
+
+.region {
+   width: 96%;
+   margin: 0 auto;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   /background: #f0f0f0;
+}
+
+.region.max { 
+	width: 100%;
+	max-width: none;
+}	
+
+.region:before, .row:before,
+.region:after, .row:after {
+	content: "";
+	display: table;
+}
+
+.region:after, .row:after {
+	clear: both;
+}
+
+.wrap, .frame { 
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.frame.offset-half, .wrap.offset-half{
+	width: 91.66668%;
+}
+
+.frame.offset-1, .wrap.offset-1{	/*margin-right would not work as expected*/
+	width: 83.33333%;
+}	
+
+.frame.offset-one-half, .wrap.offset-one-half{
+	width: 75%;
+}
+
+
+.frame.offset-2, .wrap.offset-2{
+	width: 66.66666%;
+}
+
+/*@media (min-width: 768px){
+	
+	.frame {
+		width: 750px;
+	}
+
+}
+
+@media (min-width: 992px){
+	
+	.frame {
+		width: 970px;
+	}
+
+}
+
+@media (min-width: 1200px){
+	
+	.frame {
+		width: 1170px;
+	}
+
+}
+*/
+
+@media screen and (max-width: 767px){
+	
+	.region .wrap, .region .frame{
+		float: none;
+		width: 100%;
+	}
+	
+}	
+
+.column, .columns {
+	float: left;
+	position: relative;
+	padding: 20px;
+	min-height: 1px;
+}
+	
+.column.centered, .columns.centered{
+
+	float: none;
+	margin: 0 auto;
+}		
+
+.frame [class*="column"] .item{
+	/border: 1px solid #e7e7e7;		
+	/background:;	
+	padding-left: 0;	
+	padding-right: 0;
+}
+
+
+.frame .item.bg{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+/*ROW*/
+	
+.region .row { margin: 0 ; }	/*override declaration coming from bootstrap*/
+/*row is needed because:
+
+1. It clears all columns in it
+2. Since columns may be of different heights, it ensures no interference
+with subsequent content*/
+
+		
+		
+/*TWELVE COLUMNS BEHAVIOUR*/
+
+.twelve.columns{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+		
+.twelve .row{
+	margin-left: -12.5px;
+	margin-right: -12.5px;
+}
+
+.twelve > .row:first-child, .twelve > :not(.row) > .row:first-child {
+	margin-top: -20px;
+}
+
+.twelve .row [class*="column"] > .row:first-child{
+	margin-top: -15px;
+}
+
+.twelve .row .row{
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.frame form .row {
+	margin-left: -12.5px;
+	margin-right: -12.5px;
+}
+
+
+/*PARENT LAYOUT*/
+
+.frame > header:first-child{
+	padding: 10px 30px 0;
+}
+
+.frame > .row:first-child{
+	margin-top: -20px;
+}
+
+.frame > .row{
+	margin-left: 17.5px;
+	margin-right: 17.5px;
+}
+
+.frame > .row .row{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.frame > .row [class*="column"] .row:first-child{
+	margin-top: -15px;
+}
+
+
+/*COLUMNS*/
+
+.row .column, .row .columns{
+	padding-right: 12.5px;
+	padding-left: 12.5px;
+}
+
+.row [class*="column"] [class*="column"]{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.frame > .row [class*="column"] [class*="column"]{
+	padding: 15px 10px;
+}
+
+
+/* COLLAPSED */
+
+.region.collapsed .frame [class*="column"],
+.region .frame.collapsed [class*="column"],
+.region .frame .collapsed [class*="column"],
+.frame .row.collapsed [class*="column"],	
+.frame [class*="column"].collapsed [class*="column"],
+.region .frame .column.collapsed,
+.frame .columns.collapsed,
+
+.region.collapsed .wrap [class*="column"],	
+.region .wrap.collapsed [class*="column"],
+.region .wrap .collapsed [class*="column"],	
+.wrap .row.collapsed [class*="column"],		
+.wrap [class*="column"].collapsed [class*="column"],
+.region .wrap .column.collapsed,
+.row .wrap .columns.collapsed {
+	
+	padding: 0;
+	margin: 0;
+}
+
+.collapsed .row, .row.collapsed{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.row.collapsed, v-space-1 > .row{
+	margin-bottom: 10px;
+}
+		
+.v-space-2 > .row{
+	margin-bottom: 20px;
+}
+
+.v-space-3 > .row{
+	margin-bottom: 30px;
+}
+
+[class^="v-space"] > .row:last-child{
+	margin-bottom: 0;
+}
+
+/* COLUMN WIDTHS */
+
+.one { width: 8.33333%; }
+.two { width: 16.66666%; }
+.three { width: 25%; }
+.four { width: 33.33333%; }
+.five { width: 41.66666%; }
+.six { width: 50%; }
+.seven { width: 58.33333%; }
+.eight { width: 66.66666%; }
+.nine { width: 75%; }
+.ten { width: 83.33333%; }
+.eleven { width: 91.66666%; }
+.twelve { width: 100%; }
+
+	
+/* OFFSETS */
+
+/* OFFSETS *//*Could also offset .frame and not compulsorily .columns
+
+0.5 - 11 - 0.5
+
+1 - 10 - 1
+
+1.5 - 9 - 1.5
+	
+2 - 8 - 2
+
+3 - 6 - 3
+
+
+*/
+
+/*Because .collapsed sets margin to 0, this must be overridden as every second selection of the following rulesets shows*/
+
+
+.offset-half, .offset-half[class*="column"][class~="collapsed"]	{ margin-left: 4.16666% !important; }
+.offset-1, .offset-1[class*="column"][class~="collapsed"]   { margin-left: 8.33333% !important; }
+.offset-one-half, .offset-one-half[class*="column"][class~="collapsed"]	{ margin-left: 12.5% !important; }	
+.offset-2, .offset-2[class*="column"][class~="collapsed"]   { margin-left: 16.66666% !important; }
+.offset-3, .offset-3[class*="column"][class~="collapsed"]   { margin-left: 25% !important; }
+.offset-4, .offset-4[class*="column"][class~="collapsed"]   { margin-left: 33.33333% !important; }
+.offset-5, .offset-5[class*="column"][class~="collapsed"]   { margin-left: 41.66666% !important; }
+.offset-6, .offset-6[class*="column"][class~="collapsed"]   { margin-left: 50% !important; }
+.offset-7, .offset-7[class*="column"][class~="collapsed"]   { margin-left: 58.33333% !important;; }
+.offset-8, .offset-8[class*="column"][class~="collapsed"]   { margin-left: 66.66666% !important;; }
+.offset-9, .offset-9[class*="column"][class~="collapsed"]   { margin-left: 75% !important;; }
+.offset-10, .offset-10[class*="column"][class~="collapsed"]   { margin-left: 83.33333% !important;; }
+.offset-11, .offset-11[class*="column"][class~="collapsed"]   { margin-left: 91.66666% !important;; }
+
+
+@media screen and (max-width: 767px){
+	
+	[class*="offset"]:not([class*="col-xs-offset"]):not([class*="col-sm-offset"]):not([class*="col-md-offset"]), 	/*avoid clash of col-xs-offset coming from bootstrap*/
+	[class*="offset"][class*="column"][class~="collapsed"]{
+		 margin-left: 0 !important; 
+		 width: 100% !important;
+	  }
+			
+}
+
+
+/* PUSH / PULL */		/*Equivalent to col-xs-offset*/
+
+.push-1 { left: 8.33333%; }
+.pull-1 { right: 8.33333%; }
+.push-2 { left: 16.66666%; 	}
+.pull-2 { right: 16.66666%; }
+.push-3 { left: 25%; }
+.pull-3 { right: 25%;	}
+.push-4 { left: 33.33333%; }
+.pull-4 { right: 33.33333%; }
+.push-5 { left: 41.66666%; }
+.pull-5 { right: 41.66666%; }
+.push-6 { left: 50%; }
+.pull-6 { right: 50%; }
+.push-7 { left: 58.33333%; }
+.pull-7 { right: 58.33333%; }
+.push-8 { left: 66.66666%; 	}
+.pull-8 { right: 66.66666%; }
+.push-9 { left: 75%; }
+.pull-9 { right: 75%; }
+.push-10 { left: 83.33333%; }
+.pull-10 { right: 83.33333%; }
+.push-11 { left: 91.66666%; }
+.pull-11 { right: 91.66666%; }
+
+
+/* block grids	(FOR SAME-WIDTH COLUMNS)
+--------------------------------------------------------------------- */
+
+/*the direct child selector (">") to only target first-level .columns because we may have columns inside columns*/
+
+/*you could apply bgrid to frame but its not advisable because you may later wish to add content*/
+
+
+.bgrid-sixths > [class*="column"] { width: 16.66666%; }
+
+.bgrid-fifths > [class*="column"] { width: 20%; }
+	  
+.bgrid-quarters > [class*="column"]	{ width: 25%; }
+ 
+.bgrid-thirds > [class*="column"] { width: 33.33333%; }
+
+.bgrid-halves > [class*="column"] { width: 50%; }
+   
+   
+.first { clear: left; }   /* first column in default screen */	
+
+.s-first { clear: none; } /* first column in smaller screens */
+
+
+
+/* 	SMALLER SCREENS
+--------------------------------------------------------------- */
+
+@media only screen and (max-width: 991px){
+		
+	.bgrid-sixths > [class*="column"]
+			
+	{ width: 33.33333%; }	/*6 should turn to 3*/
+	
+
+	.bgrid-fifths > [class*="column"]
+		
+	{ width: 100%; }	/*5 should turn to 1*/
+   
+	
+	.bgrid-quarters > [class*="column"]
+		
+	{ width: 50%; }		/*4 should turn to 2*/
+	
+	
+	.bgrid-thirds > [class*="column"]
+			
+	{ width: 100%; }	/*3 should turn to 1*/
+	
+}
+	
+@media only screen and (max-width: 991px) {
+
+   /* block grids on small screens */
+   
+   .s-bgrid-sixths [class*="column"]   { width: 16.66666%; }
+   
+   .s-bgrid-quarters [class*="column"] { width: 25%; }
+   
+   .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
+   
+   .s-bgrid-halves [class*="column"]   { width: 50%; }
+
+
+   /* block grids left clearing */
+   
+   .first { clear: none; }
+   
+   .s-first { clear: left; }
+
+}			
+	
+		
+	
+
+/* 	MOBILE / WIDE / SMALLER TABLETS
+--------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+	
+   .region {
+	   width: 460px;
+	   margin: 0 auto;
+	   padding: 20px 0;
+	}
+	
+   .column, .columns{
+	   float: none;
+	   width: 100% !important;		/*to override bgrid columns and other weightier selections*/
+/*	   width: auto !important;
+	   padding: 0 30px;
+	   margin-left: 0;
+	   margin-right: 0;
+*/	   }
+
+	.twelve.columns, .frame > .row > [class*="column"] {	/*Only first-level columns to have padding*/
+		padding: 30px;
+	}
+
+	[class*="column"] [class*="column"], .frame > .row [class*="column"]{
+		margin-bottom: 20px;
+	}
+					
+}
+
+@media (max-width: 767px) and (min-width: 461px) {
+		
+	  [class*="column"].col-ms-12 {
+		width: 100% !important;
+	  }
+	  [class*="column"].col-ms-11 {
+		width: 91.66666666666666% !important;
+	  }
+	  [class*="column"].col-ms-10 {
+		width: 83.33333333333334% !important;
+	  }
+	  [class*="column"].col-ms-9 {
+		width: 75% !important;
+	  }
+	  [class*="column"].col-ms-8 {
+		width: 66.66666666666666% !important;
+	  }
+	  [class*="column"].col-ms-7 {
+		width: 58.333333333333336% !important;
+	  }
+	  [class*="column"].col-ms-6 {
+		width: 50% !important;
+	  }
+	  [class*="column"].col-ms-5 {
+		width: 41.66666666666667% !important;
+	  }
+	  [class*="column"].col-ms-4 {
+		width: 33.33333333333333% !important;
+	  }
+	  [class*="column"].col-ms-3 {
+		width: 25% !important;
+	  }
+	  [class*="column"].col-ms-2 {
+		width: 16.666666666666664% !important; 
+	  }
+	  [class*="column"].col-ms-1 {
+		width: 8.333333333333332% !important;
+	  }
+	  
+	  [class*="col-ms-"]{
+		  float: left !important;
+	  }
+
+	}
+
+	@media (max-width: 991px) and (min-width: 768px) {
+		
+	  [class*="column"].col-dm-12 {
+		width: 100%;
+	  }
+	  
+	  [class*="column"].col-dm-11 {
+		width: 91.66666666666666%;
+	  }
+	  
+	  [class*="column"].col-dm-10 {
+		width: 83.33333333333334%;
+	  }
+	  
+	  [class*="column"].col-dm-9 {
+		width: 75%;
+	  }
+	  
+	  [class*="column"].col-dm-8 {
+		width: 66.66666666666666%;
+	  }
+	  
+	  [class*="column"].col-dm-7 {
+		width: 58.333333333333336%;
+	  }
+	  
+	  [class*="column"].col-dm-6 {
+		width: 50%;
+	  }
+	  
+	  [class*="column"].col-dm-5 {
+		width: 41.66666666666667%;
+	  }
+	  
+	  [class*="column"].col-dm-4 {
+		width: 33.33333333333333%;
+	  }
+	  
+	  [class*="column"].col-dm-3 {
+		width: 25%;
+	  }
+	  
+	  [class*="column"].col-dm-2 {
+		width: 16.666666666666664%;
+	  }
+	  
+	  [class*="column"].col-dm-1 {
+		width: 8.333333333333332%;
+	  }
+	
+	}
+
+
+/* 	MOBILE NARROW
+--------------------------------------------------------------- */
+@media only screen and (max-width: 460px) {
+
+   .region { width: auto; }
+
+}
+
+/*	LARGE SCREENS
+
+--------------------------------------------------------------- */
+@media (max-width: 991px){
+	
+	.region { max-width: 970px; }
+
+}
+
+/* 	LARGER SCREENS
+--------------------------------------------------------------- */
+@media (min-width: 1300px) {
+	
+   .region { width: 1280px; }		/*1170px*/
+   
+}
+
+
+.align-center {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	text-align: center !important;
+}
+
+@media screen and (max-width: 991px){
+	
+	.align-center-1{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center !important;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	
+	.align-center-2{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center !important;
+	}
+	
+	.shrink-responsive .column, .shrink-responsive .columns	{
+		padding-left: 0 !important;
+		padding-right: 0 !important;		
+	}		
+	 
+}
+
+@media screen and (max-width: 460px){
+	
+	.align-center-3{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center !important;
+	}
+
+}
+
+
+@media screen and (max-width: 991px){
+
+	.fullwidth-1{
+		width: 100% !important
+	}
+	
+}
+
+@media (max-width: 767px){
+	
+	.fullwidth-2{
+		width: 100% !important;
+	}
+	
+}
+
+@media (max-width: 460px){
+	
+	.fullwidth-3{
+		width: 100% !important;
+	}
+	
+}
+
+.vertical-shrink-wrap{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+@media (max-width: 991px){
+	
+	.vertical-shrink-wrap-dm{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	
+}
+
+@media (max-width: 767px){
+	
+	.vertical-shrink-wrap{
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+	
+	.vertical-shrink-wrap-sm{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	
+}	
+	
+
+.horizontal-shrink-wrap{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.shrink{
+	padding: 0 !important;
+}
+
+
+/*Shrink used for outer columns because the padding is needed back for spacing purposes in low screen resolutions. Use collapsed for columns you want to have no spacing at all, whatever the device width.*/
+
+@media screen and (max-width: 767px){
+	
+	.frame > .shrink, .frame > .row > .shrink{
+		padding: 20px !important;
+	}
+	
+}
+
+.shrink-wrap{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+
+/* e. Color Pallette
+
+ ------------------------------------------------------------------ */
+ 
+ 
+ /*MAIN COLORS
+ 
+ Black: #000000;
+ White: #ffffff;
+ Silver #d5d5d5;
+ 
+ */
+ 
+ /*SECONDARY COLORS
+ 
+ Forest green: rgb(18, 78, 30);
+ Lemon yellow: #ace127 ( background: rgba(172, 225, 39, 1 );
+
+ Prussian blue: #007fff
+ Light sky blue: #49c6e5
+ 
+ Drab Indigo: #124e78
+ Sky blue: #00bbce
+ 
+ Maroon: #880d1e
+ Salmon: #ed1832
+
+
+
+/* f. Misc.
+
+ ------------------------------------------------------------------ */
+
+.remove-bottom { margin-bottom: 0 !important; }
+
+.half-bottom { margin-bottom: 12px !important; }
+
+.add-bottom { margin-bottom: 24px !important; }
+
+.no-border { border: none; }
+
+.text-center  { text-align: center !important; }
+
+.text-left    { text-align: left !important; }
+
+.text-right   { text-align: right !important; }
+
+.pull-left    { float: left !important; }
+
+.pull-right   { float: right !important; }
+
+.ring-outline:hover{
+   outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+[class*="fa-"] {
+	margin-right: 10px;
+	text-align: center;
+	line-height: inherit;
+	width: 30px;
+	height: inherit;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*GENERAL*/
+
+
+/*BUTTONS, LINKS*/
+
+[class^="button-link"]{
+    display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+    background-color: rgb(18, 78, 30);
+    color: #fff !important;
+    font-family: arial;
+    font-size: 12px;
+	line-height: 37px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;	
+	vertical-align: middle;
+	text-shadow: 1px 1px rgba(0,0,0,.3);
+	transition: all .2s ;
+	cursor: pointer;
+	font-family: 'opensans-regular', arial, serif;
+}
+
+[class^="button-link"]:hover, [class^="button-link"]:hover {
+	opacity: .8;
+}
+
+[class^="button-link"]:active{
+	text-decoration: none;
+}
+
+.button-link-primary{
+	 background: green;
+}
+
+.button-link-general{
+	background: url(../images/images/button_general.png);
+	background-size: cover;
+}
+
+.button-link-tertiary{
+	background: #ed1832;
+	font-family: "OpenSans-Bold", Helvetica;
+	text-transform: uppercase;
+}
+
+a.view-more{
+	background-color: #d5d5d5;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding: .8em;
+	line-height: 100%;
+	vertical-align: middle;
+	color: black;
+	font-family: "OpenSans-Bold", arial;
+}
+
+a.view-more:hover{
+	background: rgba(0, 187, 206, 1);
+	color: grey;
+}
+
+.catalog a{
+	font-size: small;
+	font-family: Tahoma;
+	letter-spacing: 1px;	
+}
+
+.catalog a:not(.current){
+	color: black;
+}
+
+
+
+/*ARRANGEMENT*/
+
+
+.frame {
+	background: transparent;
+}
+
+.group{
+	width: 75%;
+	margin-left: 14.7%;	
+	margin-bottom: .5cm;
+}
+
+
+/*HEADINGS*/
+
+h1{
+	font-family: Helvetica, Geneva, sans-serif;
+	margin-bottom: 40px;
+	font-size: 30px;
+	color: rgba(0,187,206,1);	
+}
+
+
+/************************************************************************************************************************************************************/
+
+/*HEADER*/
+
+
+
+
+
+	/**NAVIGATION**/
+	
+
+
+
+
+/**FOOTER**/
+
+
+
+
+
+
+
+
+
+
+
