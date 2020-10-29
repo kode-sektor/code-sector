@@ -1524,7 +1524,6 @@ a[class*=carousel-control].next {
 /*CAROUSEL -END*/
 
 
-
 /*THE BODY*/
 
 
@@ -1558,6 +1557,12 @@ a[class*=carousel-control].next {
 	color: black;
 	background-color: rgba(213,213,213,.6);
 	font-family: "opensans-light", serif;
+
+	white-space: pre-wrap;      /* Webkit */    
+	white-space: -moz-pre-wrap; /* Firefox */     
+	white-space: -pre-wrap;     /* Opera <7 */    
+	white-space: -o-pre-wrap;   /* Opera 7 */     
+	word-wrap: break-word;      /* IE */ 
 }
 .service .section-header ~ .block * {
 	font-size: 1.1em;
