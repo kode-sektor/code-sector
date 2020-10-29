@@ -55,7 +55,7 @@ const designProcess = () => {
                             <p>If coming with no design of your own, you are given the privilege to browse a spectrum of mockup samples. If it interests you, you could blend in various parts of multiple mockups to engineer something even more <em>unique</em>. Communication is necessary here. We must be in agreement with the design you feel comfortable with to avoid unnecessary backtracking.</p>                            
                             <p>Cometh the hour, cometh your website. It will be made live and submitted to search engines. You will also be sent the login details and trained on how to edit and maintain your website.</p>
 
-                            <a href="website-quotes.html" className="get-started btn btn-info primary-btn">Get Started</a>
+                            <a href="/website-quotes" className="get-started btn btn-info primary-btn">Get Started</a>
                         </div>                
                     
                     </div>

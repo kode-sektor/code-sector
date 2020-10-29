@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaFacebookF, FaTwitter, FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -17,7 +18,10 @@ const Footer = () => {
                                 <h3 className="menu_head">Main Menu</h3>
                                 <div className="footer_menu">                           
                                 <ul>                        
-        
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/portfolio">Portfolio</a></li>
+                                    <li><a href="/about">Who am I?</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>                               
                             </div>                       
                         </div>
@@ -44,7 +48,7 @@ const Footer = () => {
                             <address className="footer_menu">
                                 <ul className="contact">
                                     <li><i className="fa fa-map-marker"></i>
-                                        <span>investorkay@gmail.com</span>
+                                        <span>kodesektor@gmail.com</span>
                                     </li>
                                     <li><i className="fa fa-clock-o"></i>
                                         <span>Monday - Sunday: 7AM - 8PM</span>
@@ -66,9 +70,9 @@ const Footer = () => {
 
                                     <div className="footer_menu subscribe_area">
                                         <p>"Subscribe here to get my periodic newsletter. Your details are safe."</p>
-                                        <form action="#">
+                                        <form action="https://formspree.io/f/moqpwvbj" method="post">
                                             <div className="subscribe_mail">
-                                                <input className="form-control" type="email" placeholder="Email Address"/>
+                                                <input className="form-control" type="email" name="email" id="email" placeholder="Email Address"/>
                                                 <i className="fa fa-envelope"></i>
                                             </div>
                                             <input className="submit_btn" type="submit" value="Submit"/>
@@ -88,12 +92,9 @@ const Footer = () => {
                         <div className="col-sm-6 cf">
                             <div className="footer_bottom">
                                 <ul className="social-contact list-inline">
-                                    <li> <a href="#"><i className="fa fa-facebook"></i></a></li>
-                                    <li> <a href="#"><i className="fa fa-twitter"></i></a></li>
-                                    <li> <a href="#"><i className="fa fa-rss"></i></a></li>
-                                    <li> <a href="#"><i className="fa fa-google-plus"></i> </a></li>
-                                    <li><a href="#"> <i className="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"> <i className="fa fa-pinterest"></i></a></li>
+                                    <li> <a href="#"><FaFacebookF/></a></li>
+                                    <li> <a href="#"><FaTwitter/></a></li>
+                                    <li> <a href="#"><FaLinkedinIn/></a></li>
                                 </ul>
                             </div>
                         </div>

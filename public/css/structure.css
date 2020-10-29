@@ -1278,17 +1278,17 @@ ul.disc { list-style: disc outside; }
     padding-left: 5px;
     padding-right: 5px;	
 }
-.footer_2 .social-contact li i {
+.footer_2 .social-contact li a svg {
     color: #555;
     width: 30px;
     height: 30px;
-    padding: 5px 0px 5px 0px;`
-    border: 1px solid #555;
+    padding: 5px 0px 5px 0px;
     border-radius: 2px;
     line-height: 18px;
     text-align: center;
 }
-.footer_2 .social-contact li i:hover {
+.footer_2 .social-contact li a svg:hover,
+.footer_2 .social-contact li a svg:focus {
     color: #EE3B24;
     border: 1px solid #EE3B24;
 }
@@ -1376,6 +1376,11 @@ ul.disc { list-style: disc outside; }
 .main-carousel {
 	position: relative;
 	background-color: black;
+}
+.main-carousel .carousel {
+	background: no-repeat url('../images/images/codesector-bg.png');
+	background: cover;
+	background-position: center;
 }
 .carousel {
 	padding-right: 15px;

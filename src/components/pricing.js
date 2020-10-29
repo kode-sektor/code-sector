@@ -29,7 +29,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="website-quotes.html" className="plan-btn color">Get started</a>
+                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>
                             
@@ -54,7 +54,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="website-quotes.html" className="plan-btn color">Get started</a>
+                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>
                             
@@ -77,7 +77,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="website-quotes.html" className="plan-btn color">Get started</a>
+                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>                            
                         </div>                       
