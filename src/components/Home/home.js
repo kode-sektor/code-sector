@@ -4,6 +4,7 @@ import Gallery from '../gallery'
 import Services from '../services'
 import Pricing from '../pricing'
 import DesignProcess from '../designProcess'
+import Footer from '../footer'
 
 const home = () => {
     return (
@@ -13,6 +14,7 @@ const home = () => {
             <Services />
             <Pricing />
             <DesignProcess />
+            <Footer />
         </>
     )
 }

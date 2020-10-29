@@ -1886,6 +1886,7 @@ h5 small {
 	font-family: inherit;
 }
 .stages .body p {
+	display: none;
 	font-size: 1.2em;
 	font-weight: 600;
 	font-family: 'Titillium Web';
