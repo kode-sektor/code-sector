@@ -5,9 +5,10 @@ import Home from './components/Home/home'
 
 const routes = () => {
     return (
-       <Switch>
-           <Route path="/" exact component={Home} />
-       </Switch>
+        <Switch>
+            <Route path="/" exact component={Home} />
+            {/* <Route path="/website-quotes" exact component={WebsiteQuotes} /> */}
+        </Switch>
     )
 }
 

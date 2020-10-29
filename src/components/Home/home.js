@@ -3,6 +3,7 @@ import Header from '../header'
 import Gallery from '../gallery'
 import Services from '../services'
 import Pricing from '../pricing'
+import DesignProcess from '../designProcess'
 
 const home = () => {
     return (
@@ -11,6 +12,7 @@ const home = () => {
             <Gallery />
             <Services />
             <Pricing />
+            <DesignProcess />
         </>
     )
 }

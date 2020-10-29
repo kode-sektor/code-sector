@@ -451,7 +451,7 @@ a.disabled {		/*disabled button*/
     border-top: none;
     color: rgba(238,59,36,1);
 }
-#pricing-plan .panel-body h5 {
+.pricing-plan .panel-body h5 {
 	text-decoration: none;
 }
 .frame.layout {
@@ -1557,12 +1557,8 @@ a[class*=carousel-control].next {
 	color: black;
 	background-color: rgba(213,213,213,.6);
 	font-family: "opensans-light", serif;
-
-	white-space: pre-wrap;      /* Webkit */    
-	white-space: -moz-pre-wrap; /* Firefox */     
-	white-space: -pre-wrap;     /* Opera <7 */    
-	white-space: -o-pre-wrap;   /* Opera 7 */     
-	word-wrap: break-word;      /* IE */ 
+	white-space: pre-wrap;     
+	word-wrap: break-word;
 }
 .service .section-header ~ .block * {
 	font-size: 1.1em;
@@ -1631,7 +1627,7 @@ a[class*=carousel-control].next {
 	
 /*pricing plan*/
 
-#pricing-plan {
+.pricing-plan {
     padding: 60px 0;
 }
 .section-header {
@@ -1657,7 +1653,7 @@ a[class*=carousel-control].next {
 .section-header {
 	margin: 0px -20px 28px;
 }
-#pricing-plan .collapsed [class*=col-] {
+.pricing-plan .collapsed [class*=col-] {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -1780,17 +1776,17 @@ h5 small {
 
 /*design process*/
 
-#des-process {
+.des-process {
 	position: relative;
 }
-#des-process > .container { 
+.des-process > .container { 
 	position: relative;
 	height: 600px;
 	padding: 0;
 }
 
 /*the first underlay - which holds the text*/
-#des-process .underlay-1 {
+.des-process .underlay-1 {
 	top: 0;
 	left: 0;
 	right: 0;
@@ -1800,7 +1796,7 @@ h5 small {
 	background-color: rgba(63,34,80,0.2);
 }
 /*the second underlay - which holds the animating block*/
-#des-process .underlay-2 {
+.des-process .underlay-2 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1810,40 +1806,40 @@ h5 small {
 	height: 500px;
 	z-index: 10;
 }
-#des-process .underlay-wrap {
+.des-process .underlay-wrap {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-#des-process .underlay-wrap.rotateOut {
+.des-process .underlay-wrap.rotateOut {
 	animation: rotateOut 10s linear forwards infinite;
 }
-#des-process .underlay-wrap .block {
+.des-process .underlay-wrap .block {
 	position: absolute;
 	background: rgba(0, 0, 0, .1);
 }
-#des-process .underlay-wrap .block:nth-child(1), #des-process .underlay-wrap .block:nth-child(2) {
+.des-process .underlay-wrap .block:nth-child(1), .des-process .underlay-wrap .block:nth-child(2) {
 	background: rgba(217, 83, 79, .1);
 }
-#des-process .underlay-wrap .block:nth-child(3), #des-process .underlay-wrap .block:nth-child(4) {
+.des-process .underlay-wrap .block:nth-child(3), .des-process .underlay-wrap .block:nth-child(4) {
 	background: rgba(63, 34, 80, .1);
 }
-#des-process .title-blurb {
+.des-process .title-blurb {
 	font-family: "Titillium Web", sans-serif;
 	background-color: rgba(55,50,51,.5);
 }
-#des-process .title-blurb span {
+.des-process .title-blurb span {
 	display: block;
 	color: rgba(63,34,80,.8);
 	letter-spacing: .1cm;
 }
-#des-process .title-blurb span:nth-child(odd) {
+.des-process .title-blurb span:nth-child(odd) {
 	padding-left: 40%;
 	text-align: left;
 	font-weight: 500;
 	font-size: 26px;
 }
-#des-process .title-blurb span:nth-child(odd) em {
+.des-process .title-blurb span:nth-child(odd) em {
 	font-style: normal;
 	display: inline-block;
 	font-weight: 700;
@@ -1851,20 +1847,20 @@ h5 small {
 	padding-bottom: 30px;
 	letter-spacing: .05cm;
 }
-#des-process .title-blurb span:nth-child(odd):last-child {
+.des-process .title-blurb span:nth-child(odd):last-child {
 	margin-top: 15px;
 	font-weight: normal;
 }
-#des-process .title-blurb span:nth-child(even) {
+.des-process .title-blurb span:nth-child(even) {
 	text-align: left;
 	font-weight: 400;
 	opacity: .9;
 	font-size: 37px;
 }
-#des-process .underlay-1, #des-process .underlay-2 {
+.des-process .underlay-1, .des-process .underlay-2 {
 	position: absolute;
 }
-#stages {
+.stages {
 	position: absolute;
 	top: 0;
 	z-index: 30;
@@ -1876,32 +1872,40 @@ h5 small {
 	background-color: rgba(255, 255, 255, .2);
 	background-clip: border-box;
 }
-#stages .section-header {
+.stages .section-header {
 	margin-bottom: 30px;
 }
-#stages p{
+.stages p{
 	line-height: 33px;
 }
-#stages .intro{
+.stages .intro{
 	padding-right: 333px;
 	margin-top: -15px;
 }
-#stages p{ 
+.stages p{ 
 	font-family: inherit;
 }
-#stages .body p {
+.stages .body p {
 	font-size: 1.2em;
 	font-weight: 600;
 	font-family: 'Titillium Web';
 	color: #696969;
 }
-#stages p em {
+.stages p em {
 	font-family: 'opensans-light', corbel;
 	font-style: normal;
 }
-#stages h5 {
+.stages h5 {
 	font: 15px/19px "Titillium Web", sans-serif;
 	letter-spacing: .1cm;
+}
+.process-icons {
+	font-size: 3em;
+}
+.tab-link {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .btn.get-started {
 	background: #FF2000;
@@ -3239,24 +3243,24 @@ a.tooltip:hover span, a.tooltip:focus span {
 
     	/*design process*/
 
-		#stages header {
+		.stages header {
 			box-shadow: 0 -2px 0 rgba(57,179,215,.2) inset, 0 0 20px rgba(0, 0, 0, .4);
 		}
-		#stages header [class*=col-sm], #stages header [class*=col-sm] {
+		/* .stages header [class*=col-sm], .stages header [class*=col-sm] {
 			padding-top: 20px;
 			padding-bottom: 20px;
-		}
-		#stages header [class*=col-sm]:hover, #stages header [class*=col-sm]:focus  {
+		} */
+		.stages header [class*=col-sm]:hover, .stages header [class*=col-sm]:focus  {
 			background-color: rgb(63, 34, 80);
 			transition: all 2s;
 		}
-		#stages .tab-link-clicked {
+		.stages .tab-link-clicked {
 			background-color: rgb(63, 34, 80);
 		}
-		#stages .body {
+		.stages .body {
 			padding-top: 10px;
 		}
-		#stages [class^=col-]:hover h5,	#stages [class^=col-]:focus h5 {
+		.stages [class^=col-]:hover h5,	.stages [class^=col-]:focus h5 {
 			color: white;
 			transition: color 1s;
 		}    	

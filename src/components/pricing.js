@@ -4,7 +4,7 @@ const pricing = () => {
     
     return (
         
-        <section id="pricing-plan">    
+        <section id="pricing-plan" className="pricing-plan">    
     
             <div className="container"> 
         
