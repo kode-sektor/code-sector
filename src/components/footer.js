@@ -3,6 +3,11 @@ import {FaFacebookF, FaTwitter, FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
 
+    const getYear = () => {
+        let yr = new Date().getFullYear();
+        return yr
+    }
+
     return (
 
         <>
@@ -101,7 +106,7 @@ const Footer = () => {
         
                         <div className="col-sm-6">
                             <div className="footer_bottom text-right">
-                                <p className="text-block copyright">Copyright &copy; <span> CODE SECTOR</span></p>
+                                <p className="text-block copyright">Copyright &copy; {getYear()} <span> CODE SECTOR</span></p>
                             </div>
                         </div>
                     </div>

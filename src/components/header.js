@@ -13,7 +13,7 @@ const Header = () => {
 
         <header id="page-header" className="page-header">
 
-            <a className="brand" href="index.html">
+            <a className="brand" href="/">
                 <img src="images/images/kode-sektor-logo-sm.png"/>
             </a>
         
