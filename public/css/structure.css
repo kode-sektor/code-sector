@@ -94,6 +94,33 @@
 ==============================================================================================================================================================*/
 /*Clearfix*/
 
+
+/*basic*/
+
+:root {
+	/*primary colours*/
+	--purple:  rgb(63, 34, 80);
+	--yellow: #DEB406;
+	--link: #007BFF;
+  
+	/*shades of grey*/
+	--grey: #F6F6F6;
+	--light-grey: #efefef;
+	--mid-grey: #f2f2f2;
+	--text-grey: #141517;
+	--black: #000;
+	--white: #fff;
+  
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  
+	/*font families*/
+	--font-primary: Dosis, Tahoma, Calibri, sans-serif;
+	--font-secondary: Titillium, Tahoma, Calibri, sans-serif;
+	--font-tertiary: "Century Gothic", Tahoma, Calibri, sans-serif;
+  
+  } 
+
+
 .clearfix {
   *zoom: 1;
 }
@@ -140,7 +167,7 @@ html{
 body{
 	min-height:100%;
 	padding-top: ; /*if header is fixed, so that next content won't be behind header. Padding-top should be equal height of header*/
-	font: 14px Rajdhani, "Trebuchet MS", sans-serif;
+	font: 14px Rajdhani, "Trebuchet MS", sans-serif !important;
 	color:#6a6a6a; 
 	background-image: ;    
 	letter-spacing:0.075em;
@@ -171,7 +198,66 @@ html{
 /*3. TAGS
 ==============================================================================================================================================================*/
 
-
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: var(--purple);
+	background-image: none;
+	text-transform: uppercase;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+	display: none;	
+}
+/* Custom Select */
+.select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	height: 3em;
+	line-height: 3;
+	margin: 25px auto;
+	background: var(--purple);
+	overflow: hidden;
+	border-radius: .25em;
+	font-size: 1.3em;
+}
+select {
+	flex: 1;
+	padding: 0 .5em;
+	color: #fff;
+	cursor: pointer;
+	text-indent: 0.25in;
+}
+  /* Arrow */
+.select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: var(--mid-grey);
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+	color: #fff;
+}
+select option {
+	text-transform: uppercase;
+	cursor: pointer;
+	padding-left: 0.25in;
+}
+  
 input {
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
@@ -361,6 +447,11 @@ Also includes styles that override bootstrap
 
 .bg-stripe-light {
   	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPjxwYXRoIGQ9J00tMiAxMEwxMCAtMlpNMTAgNkw2IDEwWk0tMiAyTDIgLTInIHN0cm9rZT0nI2YzZjBlZicgc3Ryb2tlLXdpZHRoPScxJy8+PC9zdmc+); 
+}
+.btn {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-family: var(--font-secondary);
 }
 .panel {
 	background-color: rgb(0,0,0.,3);
@@ -968,7 +1059,7 @@ ul.disc { list-style: disc outside; }
 	vertical-align: middle;
 	text-align: center;
 	font-family: sans-serif;	
-	background-color: rgb(63, 34, 80);
+	background-color: var(--purple);
 }
 .frontpage-title{
 	margin: 0;
@@ -2303,6 +2394,32 @@ h5 small {
 
 /*PORTFOLIO*/
 
+#portfolio-single-page .page-header {
+	margin-bottom: 25px;
+}
+#portfolio-single-page .dropdown {
+	text-align: center;
+	margin-bottom: 25px;
+}
+#portfolio-single-page .dropdown > option {
+	background: transparent;
+	border: thin solid var(--purple);
+	color: var(--purple);
+	display: inline-block;
+	padding: 5px 10px !important; 
+	text-transform: capitalize;
+	min-width: 190px;
+}
+.dropdown-menu.show {
+	min-width: 190px;
+	font-size: 1.3em;
+}
+.dropdown-item {
+	text-align: center;
+}
+.portfolio-dropdown button:hover, .portfolio-dropdown button:focus {
+	background: var(--purple);
+}
 .portfolio-grid {
 	flex-flow: wrap;
 	height: 700px;
@@ -2351,7 +2468,7 @@ h5 small {
 	text-align: center;
 	padding: 20px;
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: 0 auto;
 	text-transform: uppercase;
 	background: rgba(0,0,0,1);
