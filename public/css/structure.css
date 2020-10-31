@@ -100,7 +100,7 @@
 :root {
 	/*primary colours*/
 	--purple:  rgb(63, 34, 80);
-	--yellow: #DEB406;
+	--red: #ff0000;
 	--link: #007BFF;
   
 	/*shades of grey*/
@@ -2423,16 +2423,18 @@ h5 small {
 .portfolio-grid {
 	flex-flow: wrap;
 	height: 700px;
-	width: 100%;
 	padding: 0;
+	// background-color: transparent;
 }
 .portfolio-grid-link {
+	position: relative;
 	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 55px;
 	flex: 0 0 50%;
 	width: 50%;
 	height: 300px;
+	padding-bottom: 78px;
 	background-size: cover;
 	transition: opacity 2s ease-out;
 }
@@ -2445,23 +2447,11 @@ h5 small {
 	align-items: center;
 	height: 100%;
 	width: 100%;
-	opacity: .7;
+	opacity: .8;
 	background: #ff0000;
 }
 .portfolio-grid-link:nth-of-type(3n+1) .portfolio-link-ext {
 	background: #000;
-}
-.portfolio-grid-link.github-adidas {
-	background-image: url(../images/projects/adidas-landing-page.png);
-}
-.portfolio-grid-link.github-humber-recreation {
-	background-image: url(../images/projects/humber-fitness-centre.png);
-}
-.portfolio-grid-link.github-gidifest {
-	background-image: url(../images/projects/gidifest-microsite.png);
-}
-.portfolio-grid-link.github-airbnb {
-	background-image: url(../images/projects/airbnb-redesign.png);
 }
 .portfolio-link-ext span {
 	display: inline-block;
@@ -2476,8 +2466,20 @@ h5 small {
 .portfolio-grid-link:nth-of-type(3n+1) .portfolio-link-ext span {
 	background: #ff0000;
 }
-
-
+.portfolio-github-link {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	font-size: 2em;
+	background-color: var(--grey);
+	text-align: center;
+	opacity: .8;
+	outline: thin transparent solid;
+	transition: border-color 2s;
+}
+.portfolio-github-link:hover, .portfolio-github-link:focus {
+	outline-color: #000;
+}
 .single-portfolio.identity {
 	opacity: 0.8;
 	overflow: hidden;
@@ -2606,15 +2608,8 @@ h5 small {
 
 #portfolio-detail {
 	padding-top: 23px;
-	background-color: rgba(34,34,34,.4);
+	background-color: transparent;
 }
-
-#portfolio-detail > .row {
-	background-color: rgba(213,213,213,.5);
-	padding-top: 23px;
-	padding-bottom: 28px;
-}
-
 #portfolio-detail > header h1 {
 	float: left;
 	width: 100%;

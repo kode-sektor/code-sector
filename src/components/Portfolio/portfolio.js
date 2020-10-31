@@ -13,12 +13,20 @@ class portfolio extends React.Component{
         categories : []
     }
 
+    componentDidMount ()  {
+        client.getEntries({'content_type' : 'codeSectorPortfolio'}).then((response) => {
+            this.setState({
+                portfolio : response.items,
+                categories : this.getCategories(response.items)
+            })
+        }).catch(console.error)
+    }
+
     getCategories = (items) => {
         let tempItems = items.map(item => {
             // const {caption, githubLink, link, category, multipleCategories, poster } = item.fields
             const fields = item.fields
             let {category, multipleCategories} = fields
-            console.log (multipleCategories);
 
             if (multipleCategories) {
                 if (Array.isArray(multipleCategories)) {
@@ -34,17 +42,33 @@ class portfolio extends React.Component{
         return categories
     }
 
-    componentDidMount ()  {
-        client.getEntries({'content_type' : 'codeSectorPortfolio'}).then((response) => {
-            this.setState({
-                portfolio : response.items,
-                categories : this.getCategories(response.items)
+    loadPortfolio = () => {
+        let items = '';
+        if (this.state.portfolio) {
+            items = (this.state.portfolio).map((value, i) => {
+                console.log(value);
+                const {caption, githubLink, link, multipleCategories, poster} = value.fields
+                return (
+                    <div  key={i} style={{backgroundImage : `url(${poster.fields.file.url})`}} className="portfolio-grid-link col-sm-6">
+                        {/* <img src={poster.fields.file.url} alt={poster.fields.description} /> */}
+                        <a rel="external" href={link} target="_blank" className="portfolio-link-ext">
+                            <span className="link-ext-title">{caption}</span>
+                        </a>
+                        <a className="portfolio-github-link" rel="external" href={githubLink} target="_blank"><FaGithub /></a>
+                    </div>
+                )
             })
-        }).catch(console.error)
+        }
+        console.log(this.state.portfolio)
+        return items
+    }
+
+    handleItems = () => {
+
     }
 
     render () {
-        console.log(this.state.categories)
+        console.log(this.state.portfolio)
 
         return (
 
@@ -54,38 +78,15 @@ class portfolio extends React.Component{
 
                 <div className="select">
                     <select>
-                        <option selected disabled>Choose an option</option>
-                        {this.state.categories.map((category) => {
-                            return (<option>{category}</option>)
+                        {this.state.categories.map((category, i) => {
+                            return (<option key={i} onClick={(e) => {this.handleItems(category)}} value={category}>{category}</option>)
                         })}
                     </select>
                 </div>
 
                 <div id="portfolio-detail" className="container sheet code">
     
-                    <section className="portfolio-grid row">
-                        <div className="portfolio-grid-link col-sm-6 github-adidas">
-                            <a rel="external" href="https://kode-sektor.github.io/landing-page-adidas-psd-to-html/index.html" target="_blank" className="portfolio-link-ext">
-                                <span className="link-ext-title">ADIDAS LANDING PAGE</span>
-                            </a>
-                            <a rel="external" href="https://kode-sektor.github.io/landing-page-adidas-psd-to-html/index.html" target="_blank"><FaGithub /></a>
-                        </div>
-                        <div className="portfolio-grid-link col-sm-6 github-humber-recreation">
-                            <a rel="external" target="_blank" className="portfolio-link-ext" href="https://kode-sektor.github.io/wddm-120-psd-html-layout/">
-                                <span className="link-ext-title">HUMBER RECREATION LAYOUT</span>
-                            </a>
-                        </div>
-                        <div className="portfolio-grid-link col-sm-6 github-gidifest">
-                            <a rel="external" target="_blank" className="portfolio-link-ext" href="https://kode-sektor.github.io/wddm-121-gidifest-microsite/index.html">
-                                <span className="link-ext-title">GIDIFEST MICROSITE</span>
-                            </a>
-                        </div>
-                        <div className="portfolio-grid-link col-sm-6 github-airbnb">
-                            <a rel="external" target="_blank" className="portfolio-link-ext" href="https://kode-sektor.github.io/application-interface-redesign/source-codes/index.htm">
-                                <span className="link-ext-title">AIRBNB REDESIGN</span>
-                            </a>
-                        </div>
-                    </section>
+                    <section className="portfolio-grid row">{this.loadPortfolio()}</section>
     
                 </div>
     
