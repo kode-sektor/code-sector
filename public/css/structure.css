@@ -451,7 +451,32 @@ Also includes styles that override bootstrap
 .btn {
 	font-size: 1.3em;
 	text-transform: uppercase;
-	font-family: var(--font-secondary);
+	font-family: var(--font-primary);
+}
+.buttonset button {
+	text-align: center;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+	display: inline-block;
+	min-width: 110px;
+	margin: 15px 5px;
+	padding: 10px 15px 12px;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 1px rgba(0, 0, 0, 0.1), inset 0 -10px 20px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.2em;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: var(--purple);
+	border-color: transparent;
+}
+.buttonset button:hover, .buttonset button:focus {
+	opacity: .7;
+	background-color: var(--purple);
+	border-color: transparent;
+}
+button:disabled {
+	cursor: not-allowed;
 }
 .panel {
 	background-color: rgb(0,0,0.,3);
@@ -2422,9 +2447,7 @@ h5 small {
 }
 .portfolio-grid {
 	flex-flow: wrap;
-	height: 700px;
 	padding: 0;
-	// background-color: transparent;
 }
 .portfolio-grid-link {
 	position: relative;
@@ -2574,6 +2597,9 @@ h5 small {
 	text-shadow: 2px 0 rgba(238,59,36,.2);
 	background: none repeat scroll 0% 0% rgba(213,213,213,.3);	
 }
+.portfolio-buttonset {
+	text-align: center;
+}
 
 
 /*On hover*/
@@ -2619,13 +2645,11 @@ h5 small {
 	background: no-repeat scroll 0% 0% rgba(204, 204, 204, 1);
 	z-index: 3;
 }
-
 .portfolio-category > span {
 	display: block;
 	font-size: 24px;
 	padding: 20px;
 }
-
 .portfolio-category > span:nth-of-type(2) {
 	margin-left: -20px;
 	display: block;
@@ -2635,17 +2659,14 @@ h5 small {
 	opacity: .3;
 	background-color: rgba(0,0,0,1) !important;
 }
-
 .portfolio-category > span:nth-of-type(2) b {
 	display: block;
 	padding: 0 20px;
 	text-transform: uppercase;
 }
-
 .portfolio-category > span:nth-of-type(2).brighten-up {
 	animation: brighten-up 1.5s 0s forwards ease;
 }
-
 .portfolio-category .blurb-desc, .portfolio-title {
 	position: absolute;
 	top: 100%;
@@ -2662,13 +2683,11 @@ h5 small {
 	backface-visibility: visible;
 	background-color: inherit;
 }
-
 .portfolio-title {
 	text-align: center;
 	opacity: 0;
 	z-index: 2;
 }
-
 .portfolio-title span {
 	display: flex;
 	display: flex;
@@ -2680,43 +2699,34 @@ h5 small {
 	letter-spacing: 2px;
 	opacity: 0;	
 }
-
 .portfolio-title span b {
 	text-transform: uppercase;
 }
-
 .portfolio-category .blurb-desc.magnify-twist{
 	animation: magnify-twist-top 1s 0s linear forwards;
 }
-
 .portfolio-title.magnify-twist{
 	animation: magnify-twist-bottom 1s 0s linear forwards;
 }
-
 .portfolio-title.magnify-twist span {
 	animation: magnify-twist-vanish .5s 1s linear forwards;
 }
-
-
 .portfolio-category .blurb-desc img {
 	display: inline-block;
 	width: 20%;
 	margin-right: 5%;
 }
-
 .portfolio-category .blurb-desc b {
 	display: inline-block;
 	width: 70%;
 	text-transform: uppercase;
 	text-shadow: 2px -1px 1px rgba(255,255,255, .2);
 }
-
 #portfolio-detail p {
 	font-size: 110%;
 	font-family: opensans-light;
 	line-height: 180%;
 }
-
 [id='portfolio-brief'] p::first-letter {
 	float: left;
 	font-size: 3em;
@@ -2724,29 +2734,23 @@ h5 small {
 	margin-top: -3px;
 	margin-right: 0.15em;
 }
-
 #portfolio [id^='portfolio-'] p em {
 	text-decoration: underline;
 }
-
-
 #portfolio [id^='portfolio-'] .section-header {
 	margin-left: 0;
 	margin-right: 0;
 	text-align: center;
 }
-
 #portfolio [id^='portfolio-'] .section-header span {
 	float: none;
 }
-
 #portfolio-detail .img-frame {
 	padding: 50px 0;
 	clear: both;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END OF PORTFOLIO-SINGLE*/
-
 
 
 
