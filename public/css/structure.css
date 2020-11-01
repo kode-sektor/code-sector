@@ -2459,10 +2459,32 @@ h5 small {
 	height: 300px;
 	padding-bottom: 78px;
 	background-size: cover;
+	transform: translateY(-20px);
 	transition: opacity 2s ease-out;
+	animation: portfolioMove 2s ease-out forwards;
 }
 .portfolio-grid-link:hover, .portfolio-grid-link:focus {
 	opacity: .7;
+}
+.portfolio-grid-link:nth-of-type(1) {
+	animation-delay: 0;
+}
+.portfolio-grid-link:nth-of-type(2) {
+	animation-delay: .25s;
+}
+.portfolio-grid-link:nth-of-type(3) {
+	animation-delay: .5s;
+}
+.portfolio-grid-link:nth-of-type(4) {
+	animation-delay: .75s;
+}
+@keyframes portfolioMove {
+	from {
+		transform: translateY(-20px);
+	}
+	to {
+		transform: translateY(0px);
+	}
 }
 .portfolio-link-ext {
 	position: relative;
