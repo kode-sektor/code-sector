@@ -10,6 +10,7 @@ class portfolio extends React.Component{
 
     state = {
         portfolio : [],
+        sortedPortfolio : [],
         categories : []
     }
 
@@ -17,6 +18,7 @@ class portfolio extends React.Component{
         client.getEntries({'content_type' : 'codeSectorPortfolio'}).then((response) => {
             this.setState({
                 portfolio : response.items,
+                sortedPortfolio : response.items,
                 categories : this.getCategories(response.items)
             })
         }).catch(console.error)
@@ -44,9 +46,9 @@ class portfolio extends React.Component{
 
     loadPortfolio = () => {
         let items = '';
-        if (this.state.portfolio) {
-            items = (this.state.portfolio).map((value, i) => {
-                console.log(value);
+        if (this.state.sortedPortfolio) {
+            items = (this.state.sortedPortfolio).map((value, i) => {
+                // console.log(value);
                 const {caption, githubLink, link, multipleCategories, poster} = value.fields
                 return (
                     <div  key={i} style={{backgroundImage : `url(${poster.fields.file.url})`}} className="portfolio-grid-link col-sm-6">
@@ -63,37 +65,61 @@ class portfolio extends React.Component{
         return items
     }
 
-    handleItems = () => {
+    handleItems = (category) => {
+        let tempItems = [...this.state.portfolio]
+        // console.log(tempItems);
 
+        if (category === 'all') {
+            this.setState(() => {
+                return {
+                    sortedPortfolio : tempItems
+                }
+            })
+        } else {
+            let items = tempItems.filter(({fields}) => fields.category===category)  // Check for single category
+            let multItems = tempItems.filter(({fields}) => {    // Check for multiple categories
+                if (fields.multipleCategories) {
+                    return fields.multipleCategories.indexOf(category) !== -1
+                }
+            })
+
+            items = [...items, ...multItems]    // Concatenate single categories with multiple categories
+            items = Array.from(new Set(items))  // Avoid duplicates
+
+            this.setState(()=> {
+                return {
+                    sortedPortfolio : items
+                }
+            })
+        }
     }
 
     render () {
-        console.log(this.state.portfolio)
 
         return (
 
             <section id="portfolio-single-page" className="page-section">
-    
+
                 <Header />
 
                 <div className="select">
-                    <select>
+                    <select id="filter-portfolio" onChange={({target : {value}}) => {this.handleItems(value)}}>
                         {this.state.categories.map((category, i) => {
-                            return (<option key={i} onClick={(e) => {this.handleItems(category)}} value={category}>{category}</option>)
+                            return (<option key={i} value={category}>{category}</option>)
                         })}
                     </select>
                 </div>
 
                 <div id="portfolio-detail" className="container sheet code">
-    
+
                     <section className="portfolio-grid row">{this.loadPortfolio()}</section>
-    
+
                 </div>
-    
+
                 <WorkTogether />
-    
+
                 <Footer />
-    
+
             </section>
         )
     }
