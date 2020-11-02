@@ -2241,8 +2241,13 @@ h5 small {
     color: #222222;
 }
 #about-me .frame {
-    background-color: rgba(34,34,34,.7);
+    background-color: rgba(34,34,34,.4);
 	margin-bottom: 30px;
+}
+.about-me .page-title.author{
+	font-weight: bolder;
+	padding: 5px 15px;
+	background: rgba(0,0,0,.3);
 }
 #about-me header + .row{
 	padding: 35px 20px;
@@ -2293,6 +2298,9 @@ h5 small {
 }
 .about-me p {
     margin-bottom: 16px;
+}
+.accordion-body {
+	padding: 0 10px
 }
 .page-title.skills {
 	margin-top: 0;
@@ -2374,25 +2382,28 @@ h5 small {
     margin-top: 10px;
     margin-bottom: 10px;	
 }
-.main_feature {		/*container holding the icon and subsequent text*/
+.main-feature {		/*container holding the icon and subsequent text*/
     margin: 40px 0px;
 }
-.feature_content i {	/*the icon*/
-    display: block;
+.feature-content {
+	text-align: center;
+}
+.feature-content > svg {	/*the icon*/
     position: relative;		
-    font-size: 60px;
+	font-size: 40px;
+	color: #000;
     line-height: 60px;
     z-index: 3;
     transition: all .4s ease .1s;
 }
-.feature_content:hover i, .feature_content:hover h5 {
-    color: #EE3B24 !important;
-}
-.feature_content:hover i {
+.feature-content:hover svg {
     top: -20px;
 	cursor: pointer;
 }
-.feature_content h5 {	/*the header*/
+.feature-content:hover svg, .feature-content:hover h5 {
+    color: #EE3B24 !important;
+}
+.feature-content h5 {	/*the header*/
     font-size: 16px;
     font-weight: 800;
     line-height: 19px;
@@ -2402,12 +2413,30 @@ h5 small {
     -webkit-transition: all 150ms linear 0s;
     -o-transition: all 150ms linear 0s;
     transition: all 150ms linear 0s;
-    letter-spacing: -1px;
+	letter-spacing: -1px;
+	animation: bulge 1s ease-out alternate infinite;
 }
-.feature_content i, .feature_content h5, .feature_content a {
+.main-feature .col-sm-3:nth-of-type(2) .feature-content h5 {
+	animation-delay: 1s;
+}
+.main-feature .col-sm-3:nth-of-type(3) .feature-content h5 {
+	animation-delay: 2s;
+}
+.main-feature .col-sm-3:nth-of-type(4) .feature-content h5 {
+	animation-delay: 3s;
+}
+@keyframes bulge {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	to {
+		transform: scale3d(1.2, 1.2, 1.2)
+	}
+}
+.feature-content i, .feature-content h5, .feature-content a {
     color: #000!important;
 }
-.feature_content p {
+.feature-content p {
 	margin: 0 0 10px;
     line-height: 24px;	
     font-size: 14px;

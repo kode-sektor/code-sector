@@ -4,13 +4,13 @@ import { UncontrolledCarousel } from 'reactstrap';
 const items = [
     {
         altText: 'Slide 1',
-        caption: <p><span class="animated swing">With <b>great coding</b></span><span className="animated bounceInLeft"> comes <b>great responsibility</b></span></p>,
+        caption: <p><span class="animated tada"><b>Uncommon</b> things</span><span class="animated bounceInLeft"> in <b>common ways</b></span></p>,
         header: 'Slide 1 Header',
         key: '1'
     },
     {
         altText: 'Slide 2',
-        caption: <p><span class="animated wobble">If you can't <b>create</b> it; </span><span class="animated bounceInLeft"><b>create</b> the illusion</span></p>,
+        caption: <p><span class="animated swing">With <b>great coding</b></span><span className="animated bounceInLeft"> comes <b>great responsibility</b></span></p>,
         header: 'Slide 2 Header',
         key: '2'
     },

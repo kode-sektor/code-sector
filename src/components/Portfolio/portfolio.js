@@ -7,7 +7,6 @@ import { FaGithub } from 'react-icons/fa'
 import { Button } from 'reactstrap';
 
 
-
 class portfolio extends React.Component{
 
     state = {
