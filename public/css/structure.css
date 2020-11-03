@@ -2358,13 +2358,52 @@ h5 small {
 #why-patronize:hover .author-name.pulse, #why-patronize:focus .author-name.pulse {
 	animation: pulse 2.5s 2s infinite ease-in-out alternate both;
 }
-.author-name span.cycle-glow {
-	transform: scale3d(1.2,1.2,1.2);
-	text-shadow: 3px 2px 2px rgba(0,0,0,1);
+.author-name span {
+	display: inline-block;
+	animation: cycle-glow .3s infinite ease-in-out alternate;
+	text-shadow: 3px 2px 2px rgba(0,0,0,.3);
+}
+@keyframes cycle-glow {
+	from {
+		text-shadow: 3px 2px 2px rgba(0,0,0,.3);
+	}
+	to {
+		text-shadow: 3px 2px 2px rgba(0,0,0,1);
+	}
+}
+.author-name  span:nth-child(1) {
+	animation-delay: .1s;
+}
+.author-name  span:nth-child(2) {
+	animation-delay: .2s;
+}
+.author-name  span:nth-child(3) {
+	animation-delay: .3s;
+}
+.author-name  span:nth-child(4) {
+	animation-delay: 4s;
+}
+.author-name  span:nth-child(5) {
+	animation-delay: .5s;
+}
+.author-name  span:nth-child(6) {
+	animation-delay: .6s;
+}
+.author-name  span:nth-child(7) {
+	animation-delay: .7s;
+}
+.author-name  span:nth-child(8) {
+	animation-delay: .8s;
+}
+.author-name  span:nth-child(9) {
+	animation-delay: .9s;
+}
+.author-name  span:nth-child(10) {
+	animation-delay: 1s;
 }
 #why-patronize .group {
 	padding: 0 20px;
-	background-color: rgba(204, 204, 204, .7);
+	background-color: rgba(204, 204, 204, .9);
 }
 #why-patronize blockquote {
 	display: inline-block;
