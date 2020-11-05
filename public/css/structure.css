@@ -2047,7 +2047,6 @@ h5 small {
 #main-contact-form .form-group {
     margin-bottom: 28px;
 }
-
 .siteform input[type="text"], 
 .siteform input[type="email"], 
 .siteform select{
@@ -2056,7 +2055,7 @@ h5 small {
 	border-radius: 0;
 	box-shadow: none;
 	color: white;
-	border-bottom: thin solid black;
+	border: 2px solid var(--grey) !important;
     transition: 300ms;
 }
 .siteform input[type="text"], 
@@ -2109,7 +2108,8 @@ h5 small {
 #contact ul.social > li > a {
 	text-decoration: none;
     display: block;
-    font-size: 18px;
+	font-size: 18px;
+	line-height: 2em;
 	transition: 300ms;
 	color: #FF2000;
 	font-weight: bold;

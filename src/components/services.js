@@ -1,6 +1,5 @@
 import React from 'react'
 import { client } from '../client'
-import marked from 'marked'
 
 class services extends React.Component {
 

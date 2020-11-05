@@ -59,7 +59,7 @@ class about extends React.Component {
 		                        
 		                        <h3 className="page-subtitle">Intro</h3>
 		                        <p className="intro">                    
-		                            I'M A 7-YEAR EXPERIENCED <strong>FULL-STACK WEB DEVELOPER</strong> WITH HONOURS IN WEB DESIGN AND DEVELOPMENT. I CREATE <strong>WORLD-className WEBSITES</strong> WITH EFFECTIVE VISUAL IDENTITIES FOR COMPANIES (OF ALL SIZES) / INDIVIDUALS AROUND THE GLOBE.                        
+		                            I'M A 7-YEAR EXPERIENCED <strong>FULL-STACK WEB DEVELOPER</strong> WITH HONOURS IN WEB DESIGN AND DEVELOPMENT. I CREATE <strong>WORLD-CLASS WEBSITES</strong> WITH EFFECTIVE VISUAL IDENTITIES FOR COMPANIES (OF ALL SIZES) / INDIVIDUALS AROUND THE GLOBE.                        
 		                        </p>
 
 		                        <h3 className="page-subtitle">The Languages & Tools I Use</h3>
@@ -68,11 +68,6 @@ class about extends React.Component {
 		                            <dt>HTML5, CSS3, JavaScript (jQuery), NodeJS, ReactStrap, GatsbyJS, ReactJS, Firebase, HandleBars, MongoDB & MySQLi:</dt>
 		                            <dd><p>I make use of a range of the latest bleeding-edge technologies to create clean, amazing, modern, responsive and accessible websites and web applications.</p></dd>
 
-		                            <dt>BOOTSTRAP:</dt>
-		                            <dd><p>I do custom coding - in other words, I can create for you a unique, tailor-made site that suits your needs and appeal. I employ the Bootstrap framework to define the skeleton of most of my projects. This accelerates development time.</p></dd>
-
-		                            <dt>WORDPRESS CMS:</dt>
-		                            <dd><p>I also am proficient at using the popular content management system - Wordpress.</p></dd>
 		                        </dl>
 		                            
 		                    </div>
