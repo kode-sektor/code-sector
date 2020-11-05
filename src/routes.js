@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio/portfolio'
 import About from './components/About/about'
 import Contact from './components/Contact/contact'
 import PrivacyPolicy from './components/PrivacyPolicy/privacy-policy'
-// import TermsOfUse from './components/TermsOfUse/terms-of-use'
+import TermsOfUse from './components/TermsOfUse/terms-of-use'
 
 const routes = () => {
     return (
@@ -15,7 +15,7 @@ const routes = () => {
             <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
-            {/* <Route path="/terms-of-use" exact component={TermsOfUse} /> */}
+            <Route path="/terms-of-use" exact component={TermsOfUse} />
             <Route path="/privacy-policy" exact component={PrivacyPolicy} />
             {/* <Route path="/website-quotes" exact component={WebsiteQuotes} /> */}
         </Switch>
