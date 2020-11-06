@@ -1227,7 +1227,7 @@ ul.disc { list-style: disc outside; }
 	background-color: rgba(255, 255, 255, .6);
 	border: 2px solid rgba(213,213,213,.6);
 }
-#main-nav ul li.marked a{
+#main-nav ul li.marked a {
 	background-color: rgba(255, 255, 255, .2);	
 	color: black !important;
 	text-shadow: 2px 2px 3px rgba(255,255,255,.2);
@@ -1241,6 +1241,10 @@ ul.disc { list-style: disc outside; }
     text-transform: uppercase;
     transition: all .2s;
 	font-family: "Century Gothic";
+}
+.cta-free-quote {
+	color: #fff;
+	background: var(--red);
 }
 
 /*THE HEADER -- END*/
@@ -2069,7 +2073,7 @@ h5 small {
 /*CONTACT FORM*/
 
 #contact {
-	padding: 50px 30px;
+	padding: 50px 0px;
 	border-radius: 0 0 5px 5px;
     background: #fff;
     border-bottom: 1px solid #e9e9e9;	

@@ -97,11 +97,11 @@ const Footer = () => {
                     <div className="col-sm-6 cf">
                         <div className="footer_bottom">
                             <ul className="social-contact list-inline">
-                                <li> <a href="#"><FaFacebookF/></a></li>
-                                <li> <a href="#"><FaTwitter/></a></li>
-                                <li> <a href="#"><FaLinkedinIn/></a></li>
+                                <li> <a href="https://www.facebook.com/kardinal.kay"><FaFacebookF/></a></li>
+                                <li> <a href="https://twitter.com/code_sector"><FaTwitter/></a></li>
+                                <li> <a href="https://www.linkedin.com/in/ibiyemikayode/"><FaLinkedinIn/></a></li>
                                 <li><a href="www.googleplus.com/"><FaGooglePlusG className="icons"/></a></li>
-                                <li><a href="www.pinterest.com/"><FaGithub className="icons"/></a></li>
+                                <li><a href="https://github.com/kode-sektor"><FaGithub className="icons"/></a></li>
                                 <li><a href="youtube.com/"><FaYoutube className="icons"/></a></li>
                             </ul>
                         </div>

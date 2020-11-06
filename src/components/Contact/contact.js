@@ -224,15 +224,15 @@ export default class extends React.Component {
                                 
                                     <div className="col-sm-6">                        
                                         <ul className="social">
-                                            <li><a href="www.facebook.com/"><FaFacebook className="icons"/> Facebook</a></li>
+                                            <li><a href="https://www.facebook.com/kardinal.kay"><FaFacebook className="icons"/> Facebook</a></li>
                                             <li><a href="www.googleplus.com/"><FaGooglePlusG className="icons"/> Google Plus</a></li>
-                                            <li><a href="www.pinterest.com/"><FaGithub className="icons"/> GitHub</a></li>
+                                            <li><a href="https://github.com/kode-sektor"><FaGithub className="icons"/> GitHub</a></li>
                                         </ul>                            
                                     </div>                        
                                     <div className="col-sm-6">                        
                                         <ul className="social">
-                                            <li><a href="linkedin.com/"><FaLinkedinIn className="icons"/> LinkedIn</a></li>
-                                            <li><a href="twitter.com/"><FaTwitter className="icons"/> Twitter</a></li>
+                                            <li><a href="https://www.linkedin.com/in/ibiyemikayode"><FaLinkedinIn className="icons"/> LinkedIn</a></li>
+                                            <li><a href="https://twitter.com/code_sector"><FaTwitter className="icons"/> Twitter</a></li>
                                             <li><a href="youtube.com/"><FaYoutube className="icons"/> Youtube</a></li>
                                         </ul>                            
                                     </div>

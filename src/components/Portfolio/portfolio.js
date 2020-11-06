@@ -167,7 +167,7 @@ class portfolio extends React.Component{
 
             (id === "next") ? factor++ : factor--
             statePrev = (factor === 0) ? true : false;
-            console.log(factor)
+            // console.log(factor)
 
             if (factor === Math.floor((((paginatedEntries).length) - 1) / perPage)) {
                 stateNext = true
