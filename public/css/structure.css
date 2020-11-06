@@ -436,9 +436,9 @@ form select {
 	cursor: pointer;
 }
 form label {
-	font-weight: normal;
+	font-weight: bold;
 	font: 15px/19px;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--font-primary);
 }
 
 /*7. HELPER STYLES / CLASSES (Your normal classes)
@@ -2038,7 +2038,14 @@ h5 small {
 	cursor: pointer;
 }
 .tab-link:hover span svg, .tab-link:focus span svg {
-	color: #d9534f
+	color: #d9534f;
+}
+.react-tabs__tab--selected {
+	background-color: rgb(63, 34, 80);
+    transition: all 2s;
+}
+.react-tabs__tab--selected .tab-link span svg{
+	color: #d9534f;	
 }
 .btn.get-started {
 	background: #FF2000;
@@ -2102,6 +2109,8 @@ h5 small {
 }
 .siteform input[type="text"], 
 .siteform input[type="email"], 
+.siteform input[type="number"], 
+.siteform input[type="date"], 
 .siteform select{
     border: 0;
 	background-color: transparent;

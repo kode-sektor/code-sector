@@ -2,8 +2,6 @@ import React from 'react'
 import { FaEnvelope, FaPen, FaRocket, FaDesktop } from 'react-icons/fa'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
-
 
 const designProcess = () => {
 
@@ -56,9 +54,6 @@ const designProcess = () => {
                         <TabPanel>
                             <p>Cometh the hour, cometh your website. It will be made live and submitted to search engines. You will also be sent the login details and trained on how to edit and maintain your website.</p> 
                         </TabPanel>
-                        <div className="row justify-content-center">
-                            <a href="/website-quotes" className="get-started btn btn-info primary-btn">Get Started</a>
-                        </div>
                     </Tabs>
 
                 </div>

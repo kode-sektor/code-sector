@@ -38,49 +38,117 @@ export default class extends React.Component {
                                     initialValues={{
                                         name: '',
                                         email: '',
-                                        requirement: 'I want people to know about my services and what I do',
                                         cms: 'custom-coded',
-                                        message : ''
+                                        completionDate : '',
+                                        phone : '',
+                                        existingWebsite : '',
+                                        budget : '600-1000',
+                                        totalPages : '',
+                                        ecommerce : 'no',
+                                        websiteExamples : '',
+                                        notes : ''
                                     }}
                                     validationSchema={Yup.object().shape({
                                         name: Yup.string()
                                             .required('Name is required'),
                                         email: Yup.string()
                                             .email('Email is invalid')
-                                            .required('Email is required'),
-                                        requirement: Yup.string()
-                                            .required('Choose suitable requirement'),
+                                            .required('Email is required')
                                     })}
                                     onSubmit={(fields) => {    
                                         // alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
-
                                         emailjs.send('gmail', process.env.REACT_APP_EMAILJS_TEMPLATE_ID, fields, process.env.REACT_APP_EMAILJS_USER_ID).then((response) => {
+                                            alert('Thank you for your Project Quote')
                                             console.log('SUCCESS!', response.status, response.text)
                                         }, ((error) => {
+                                            alert('Error processing Project Quote')
                                             console.log('FAILED...', error)
                                          }))
                                     }}
                                 >
                                     {({ errors, status, touched }) => (
-                                        <Form id="main-contact-form" className="siteform" name="contact-form" method="post" action="sendemail.php" role="form" autocomplete>
+                                        <Form id="main-contact-form" className="siteform" name="contact-form" method="post" action="" role="form" autoComplete>
                                             <div className="row form-content">
                                                 <div className="col-sm-6">
                                                     <div className="form-group">
-                                                        <label htmlFor="firstName">Name</label>
-                                                        <Field name="name" type="text"  placeholder="Name" className={'form-control' + (errors.name && touched.name ? ' is-invalid' : '')} />
-                                                        <ErrorMessage name="firstName" component="div" className="invalid-feedback" />
+                                                        <label htmlFor="name">Name</label>
+                                                        <Field name="name" id="name" type="text"  placeholder="Name" className={'form-control' + (errors.name && touched.name ? ' is-invalid' : '')} />
+                                                        <ErrorMessage name="name" component="div" className="invalid-feedback" />
                                                     </div>
                                                 </div>
                                                 <div className="col-sm-6">
                                                     <div className="form-group">
                                                         <label htmlFor="email">Email</label>
-                                                        <Field name="email" type="text" placeholder="Email" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+                                                        <Field name="email" id="email" type="text" placeholder="Email" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
                                                         <ErrorMessage name="email" component="div" className="invalid-feedback" />
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="row form-content">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="phone">Phone</label>
+                                                        <Field name="phone" id="phone" type="text"  placeholder="Phone" className={'form-control' + (errors.phone && touched.phone ? ' is-invalid' : '')} />
+                                                        <ErrorMessage name="phone" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="existingWebsite">Existing website (if applicable)</label>
+                                                        <Field name="existingWebsite" id="existingWebsite" type="text" placeholder="https://" className={'form-control' + (errors.existingWebsite && touched.existingWebsite ? ' is-invalid' : '')} />
+                                                        <ErrorMessage name="existingWebsite" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row form-content">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="budget">What is your budget ($CAD)?</label>
+                                                        <Field as="select" name="budget" id="budget" type="text" className={'form-control' + (errors.budget && touched.budget ? ' is-invalid' : '')}>
+                                                            <option value="600-1000">600-1000</option>
+                                                            <option value="1000-1500">1000-1500</option>
+                                                            <option value="1500-2000">1500-2000</option>
+                                                            <option value="2000-2500">2000-2500</option>
+                                                            <option value="2500-3000">2500-3000</option>
+                                                            <option value="3000-4000">3000-4000</option>
+                                                            <option value="4000-5000">4000-5000</option>
+                                                            <option value="5000-10000">5000-10000</option>
+                                                            <option value="10000+">10000+</option>
+                                                            <option value="No Budget">No Budget</option>
+                                                        </Field>
+                                                        <ErrorMessage name="budget" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="totalPages">Total number of pages</label>
+                                                        <Field name="totalPages" id="totalPages" type="number" placeholder="" className={'form-control' + (errors.totalPages && touched.totalPages ? ' is-invalid' : '')}>
+                                                        </Field>
+                                                        <ErrorMessage name="totalPages" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row form-content">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="completionDate">Completion Date</label>
+                                                        <Field name="completionDate" id="completionDate" type="date" min={new Date().toISOString().split("T")[0]} value={new Date().toISOString().split("T")[0]}  placeholder="completionDate" className={'form-control' + (errors.completionDate && touched.completionDate ? ' is-invalid' : '')} />
+                                                        <ErrorMessage name="completionDate" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="ecommerce">E-commerce required</label>
+                                                        <Field as="select" name="ecommerce" id="ecommerce" type="text" className={'form-control' + (errors.ecommerce && touched.ecommerce ? ' is-invalid' : '')}>
+                                                            <option value="no">No</option>
+                                                            <option value="yes">Yes</option>
+                                                        </Field>
+                                                        <ErrorMessage name="ecommerce" component="div" className="invalid-feedback" />
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                            <div className="row form-row">
+                                            {/* <div className="row form-row">
 
                                                 <div className="col-sm-12">
                                                     <label for="requirement" className="control-label">Choose suitable requirement:</label>
@@ -96,7 +164,7 @@ export default class extends React.Component {
                                                     </Field>
                                                     <ErrorMessage name="requirement" component="div" className="invalid-feedback" />
                                                 </div>                            
-                                            </div>
+                                            </div> */}
 
                                             <p>All custom-coded sites are powered by the bootstrap framework</p>
                                                         
@@ -116,12 +184,25 @@ export default class extends React.Component {
                                             <div className="row">                        
                                                 <div className="col-sm-12">                            
                                                     <div className="form-group">   
-                                                        <Field as="textarea" name="message" id="message" className="form-control" rows="8" placeholder="Message"></Field>
+                                                        <label htmlFor="websiteExamples">Do you have examples of websites in which you like the overall design of?
+</label>
+                                                        <Field as="textarea" name="websiteExamples" id="websiteExamples" className="form-control" rows="5" ></
+                                                        Field>
                                                     </div>                                
+                                                </div>  
+                                                <div className="col-sm-12">                            
+                                                    <div className="form-group">   
+                                                        <label htmlFor="notes">Notes or special requests
+</label>
+                                                        <Field as="textarea" name="notes" id="notes" className="form-control" rows="5" ></
+                                                        Field>
+                                                    </div>                                
+                                                </div>  
+                                                <div className="col-sm-12">
                                                     <div className="form-group">                                
                                                         <button type="submit" className="btn">Send Message</button>                                    
-                                                    </div>                                
-                                                </div>                            
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </Form>
                                     )}

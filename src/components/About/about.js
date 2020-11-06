@@ -65,7 +65,7 @@ class about extends React.Component {
 		                        <h3 className="page-subtitle">The Languages & Tools I Use</h3>
 
 		                        <dl id="web-tools">
-		                            <dt>HTML5, CSS3, JavaScript (jQuery), NodeJS, ReactStrap, GatsbyJS, ReactJS, Firebase, HandleBars, MongoDB & MySQLi:</dt>
+		                            <dt>HTML5, CSS3, JavaScript (jQuery), NodeJS, ReactStrap, GatsbyJS, GraphQL, ReactJS, Firebase, HandleBars, Contentful, MongoDB & MySQLi:</dt>
 		                            <dd><p>I make use of a range of the latest bleeding-edge technologies to create clean, amazing, modern, responsive and accessible websites and web applications.</p></dd>
 
 		                        </dl>

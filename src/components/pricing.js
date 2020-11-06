@@ -19,7 +19,7 @@ const pricing = () => {
                         <div className="panel panel-default price">                         
                             <div className="panel-heading">Starter</div>                            
                             <div className="panel-body">                            
-                                <h5><sup>$</sup>499</h5>                                 
+                                <h5><sup>$</sup>599</h5>                                 
                                 <p className="lead">Small Businesses & Startups</p>                                
                             </div>
 
@@ -29,7 +29,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
+                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>
                             
@@ -44,7 +44,7 @@ const pricing = () => {
                             <div className="panel-heading">Ultimate</div>
                             
                             <div className="panel-body">                            
-                                <h5><sup>$</sup>799</h5>                                
+                                <h5><sup>$</sup>1599</h5>                                
                                 <p className="lead">Big Businesses / Ecommerce</p>                                
                             </div>
 
@@ -54,7 +54,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
+                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>
                             
@@ -67,7 +67,7 @@ const pricing = () => {
                         <div className="panel panel-default price">                        
                             <div className="panel-heading">Professional</div>                            
                             <div className="panel-body">                            
-                                <h5><sup>$</sup>635</h5>                                
+                                <h5><sup>$</sup>835</h5>                                
                                 <p className="lead">For Medium Businesses</p>                                
                             </div>
 
@@ -77,7 +77,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/website-quotes" className="plan-btn color">Get started</a>
+                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
                                 </li>                                
                             </ul>                            
                         </div>                       
