@@ -27,6 +27,12 @@ class about extends React.Component {
         		faq : response.items
         	})
         })
+	}
+	
+	careerYrs = () => {
+        const startYr = 2015
+		let activeYrs = new Date().getFullYear() - startYr
+        return activeYrs
     }
 
 	render () {
@@ -59,7 +65,7 @@ class about extends React.Component {
 		                        
 		                        <h3 className="page-subtitle">Intro</h3>
 		                        <p className="intro">                    
-		                            I'M A 7-YEAR EXPERIENCED <strong>FULL-STACK WEB DEVELOPER</strong> WITH HONOURS IN WEB DESIGN AND DEVELOPMENT. I CREATE <strong>WORLD-CLASS WEBSITES</strong> WITH EFFECTIVE VISUAL IDENTITIES FOR COMPANIES (OF ALL SIZES) / INDIVIDUALS AROUND THE GLOBE.                        
+		   							I'M A {this.careerYrs()}-YEAR EXPERIENCED <strong>FULL-STACK WEB DEVELOPER</strong> WITH HONOURS IN WEB DESIGN AND DEVELOPMENT. I CREATE <strong>WORLD-CLASS WEBSITES</strong> WITH EFFECTIVE VISUAL IDENTITIES FOR COMPANIES (OF ALL SIZES) / INDIVIDUALS AROUND THE GLOBE.                        
 		                        </p>
 
 		                        <h3 className="page-subtitle">The Languages & Tools I Use</h3>
@@ -253,9 +259,9 @@ class about extends React.Component {
 
 										let markedBody;
 		        	                	let {header, body} = value.fields
-		        	                	console.log(value.fields)
+		        	                	// console.log(value.fields)
 		        	                	body = body.content[0].content[0].value
-		        	                	console.log(body, header)
+		        	                	// console.log(body, header)
 
 		        	                	return (
 			                                <AccordionItem key={i} className="panel panel-default">

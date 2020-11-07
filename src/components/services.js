@@ -35,7 +35,7 @@ class services extends React.Component {
                                 <div className="col-md-12">                                            
                                     <div className="work module"> 
             
-                                        <h1 className="section-header">{title}</h1>                            
+                                        <h1 className="section-header clock">{title}</h1>                            
                                         <div className="block" dangerouslySetInnerHTML={{__html : body.content[0].content[0].value }} />
                                         
                                         <figure className="img-container"> 
