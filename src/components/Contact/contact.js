@@ -28,7 +28,7 @@ export default class extends React.Component {
                     
                         <div className="row">
                                 
-                            <div className="col-sm-7">  
+                            <div className="col-lg-7">  
     
                                 <h3 className="page-title contact-header">Contact Me By Mail</h3>                    
                                 <p>Don't know how to go about your web project? Feel free to contact about anything and you'll be gotten back to as soon as possible.</p>  
@@ -210,12 +210,12 @@ export default class extends React.Component {
                                     
                             </div>
                                              
-                            <div className="col-sm-5 contact-socials">
+                            <div className="col-lg-5 contact-socials">
     
                                 <h3 className="page-title">Code Sector Socials</h3>
     
                                 <div className="row">                    
-                                    <div className="col-sm-10">                        
+                                    <div className="col-12">                        
                                         <p>Please note: I get really busy sometimes, nevertheless, I will always respond to your mail. Please be patient. Thanks!</p>                                                    
                                     </div>                                                
                                 </div>
