@@ -78,8 +78,7 @@ class portfolio extends React.Component{
                 // console.log(value);
                 const {caption, githubLink, link, multipleCategories, poster} = value.fields
                 return (
-                    <div  key={i} style={{backgroundImage : `url(${poster.fields.file.url})`}} className="portfolio-grid-link col-sm-6">
-                        {/* <img src={poster.fields.file.url} alt={poster.fields.description} /> */}
+                    <div  key={i} style={{backgroundImage : `url(${poster.fields.file.url})`}} className="portfolio-grid-link col-md-6">
                         <a rel="external" href={link} target="_blank" className="portfolio-link-ext">
                             <span className="link-ext-title">{caption}</span>
                         </a>

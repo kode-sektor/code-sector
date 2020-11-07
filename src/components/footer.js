@@ -53,7 +53,7 @@ const Footer = () => {
                         <address className="footer_menu">
                             <ul className="contact">
                                 <li><i className="fa fa-map-marker"></i>
-                                    <span>kodesektor@gmail.com</span>
+                                    <span>kay.commerce.soln@gmail.com</span>
                                 </li>
                                 <li><i className="fa fa-clock-o"></i>
                                     <span>Monday - Sunday: 7AM - 8PM</span>
