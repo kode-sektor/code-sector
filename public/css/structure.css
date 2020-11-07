@@ -1064,9 +1064,6 @@ ul.disc { list-style: disc outside; }
 }
 .subpage-header{
 	text-transform: uppercase;
-	word-spacing: ;
-	letter-spacing: ;
-	text-shadow: ;
 	height: 70px;
 }
 .frontpage-title, .subpage-headers{
@@ -1204,7 +1201,6 @@ ul.disc { list-style: disc outside; }
 	padding: .2em .4em;
 }
 .main-header .page-logo a{
-	//color: rgba(255,51,0,1);
 	font-size: 33px;
 	font-family: Candara, Castellar, Centaur;
 	letter-spacing: 2px;
@@ -1226,6 +1222,10 @@ ul.disc { list-style: disc outside; }
     color: black;
 	background-color: rgba(255, 255, 255, .6);
 	border: 2px solid rgba(213,213,213,.6);
+}
+#main-nav ul li {
+	flex-grow: 1;
+	text-align: center;
 }
 #main-nav ul li.marked a {
 	background-color: rgba(255, 255, 255, .2);	
@@ -1393,6 +1393,10 @@ ul.disc { list-style: disc outside; }
     list-style: none;
     margin-left: -5px;	
 }
+.footer_2 .social-contact li {
+	margin-right: 10px;
+}
+
 .footer_2 .footer_mid ul li {
     margin-top: 20px;
     display: inline-block;
@@ -1661,6 +1665,9 @@ a[class*=carousel-control].next {
 }
 .work.module {
 	position: relative;
+	
+	display: flex;
+	flex-flow: column wrap;
 }
 .service .section-header {
 	position: relative;
@@ -1673,6 +1680,8 @@ a[class*=carousel-control].next {
 	font-family: Titillium Web, "Lucida Sans Unicode";
 	background-color: black;
 	overflow: visible;
+
+	width: 100%;
 }
 .service .section-header ~ .block {
 	position: relative;
@@ -1684,7 +1693,9 @@ a[class*=carousel-control].next {
 	background-color: rgba(213,213,213,.6);
 	font-family: "opensans-light", serif;
 	white-space: pre-wrap;     
-	word-wrap: break-word;
+	word-break: break-word;
+
+	order: 2;
 }
 .service .section-header ~ .block * {
 	font-size: 1.1em;
@@ -1694,7 +1705,7 @@ a[class*=carousel-control].next {
 	margin-bottom: 0;
 }
 .service .img-container {
-	position: absolute;
+	/* position: absolute;
 	top: 98px;
 	height: 350px;
 	right: -200px;
@@ -1702,10 +1713,12 @@ a[class*=carousel-control].next {
 	z-index: 1;
 	transform: rotateY(-180deg);
 	transform-style: preserve-3d;
-	perspective: 1000px;
+	perspective: 1000px; */
 	transition: all 2.5s;
 	text-align: center;
 	overflow: hidden;
+
+	order: 0;
 }
 .service:nth-child(even) .img-container {
 	right: 0;
@@ -1719,8 +1732,10 @@ a[class*=carousel-control].next {
 }*/
 .service .img-container img {
 	display: inline-block;
-	height: 100%;
-	width: auto;
+	/* height: 100%;
+	width: auto; */
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -1907,7 +1922,6 @@ h5 small {
 }
 .des-process > .container { 
 	position: relative;
-	height: 600px;
 	padding: 0;
 }
 
@@ -1984,17 +1998,17 @@ h5 small {
 	font-size: 37px;
 }
 .des-process .underlay-1, .des-process .underlay-2 {
+	display: none;
 	position: absolute;
 }
 .stages {
-	position: absolute;
+	/* position: absolute;
 	top: 0;
-	z-index: 30;
-	padding-left: 20px;
-	padding-right: 20px;
+	z-index: 30; */
+	padding: 20px;
 	min-height: 600px;
 	font-size: 1.1em;
-	font-family: 'Rajdhani', corbel;
+	font-family: var(--font-primary);
 	background-color: rgba(255, 255, 255, .2);
 	background-clip: border-box;
 }
@@ -2005,8 +2019,8 @@ h5 small {
 	line-height: 33px;
 }
 .stages .intro{
-	padding-right: 333px;
-	margin-top: -15px;
+	/* padding-right: 333px;
+	margin-top: -15px; */
 }
 .stages p{ 
 	font-family: inherit;
@@ -3460,11 +3474,29 @@ a.tooltip:hover span, a.tooltip:focus span {
 		.service:nth-child(even) .img-container {
 			left: -125px;
 		}
+		.work.module {
+			display: block;
+			flex-flow: initial;
+		}
+		.service .section-header {
+			width: auto;
+		}
 		.service:nth-child(odd) [class^="col"]:first-of-type .section-header {
 			margin-right: -125px;
 		}
 		.service:nth-child(even) [class^="col"]:first-of-type .section-header {
 			margin-left: -125px;
+		}
+		.service .img-container {
+			position: absolute;
+			top: 98px;
+			height: 350px;
+			right: -200px;
+			width: 400px;
+			z-index: 1;
+			transform: rotateY(-180deg);
+			transform-style: preserve-3d;
+			perspective: 1000px;
 		}
 
 		/*pricing plan*/

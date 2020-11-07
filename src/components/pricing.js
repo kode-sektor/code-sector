@@ -14,7 +14,7 @@ const pricing = () => {
 
                 <div className="row collapsed">
 
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                     
                         <div className="panel panel-default price">                         
                             <div className="panel-heading">Starter</div>                            
@@ -37,7 +37,7 @@ const pricing = () => {
                         
                     </div>
 
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                     
                         <div className="panel panel-default price featured">
                         
@@ -62,7 +62,7 @@ const pricing = () => {
                         
                     </div>
 
-                    <div className="col-sm-4">
+                    <div className="col-md-4">
                     
                         <div className="panel panel-default price">                        
                             <div className="panel-heading">Professional</div>                            

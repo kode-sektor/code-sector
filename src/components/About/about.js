@@ -66,7 +66,9 @@ class about extends React.Component {
 
 		                        <dl id="web-tools">
 		                            <dt>HTML5, CSS3, JavaScript (jQuery), NodeJS, ReactStrap, GatsbyJS, GraphQL, ReactJS, Firebase, HandleBars, Contentful, MongoDB & MySQLi:</dt>
-		                            <dd><p>I make use of a range of the latest bleeding-edge technologies to create clean, amazing, modern, responsive and accessible websites and web applications.</p></dd>
+		                            <dd><p>I make use of a range of the latest bleeding-edge technologies to create clean, amazing, modern, responsive and accessible websites and web applications.</p>
+									<p>Complex layouts and designs are my niche. But that never rules them out of being accessible, navigable and responsive.</p>
+									</dd>
 
 		                        </dl>
 		                            

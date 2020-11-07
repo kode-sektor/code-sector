@@ -18,7 +18,7 @@ const Footer = () => {
     
                 <div className="row footer_1">  
 
-                    <div className="col-sm-3">                   
+                    <div className="col-lg-3">                   
                         <div className="content">                   
                             <h3 className="menu_head">Main Menu</h3>
                             <div className="footer_menu">                           
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
                 
-                <div className="col-sm-3">
+                <div className="col-lg-3">
 
                     <div className="content">
                         <h3 className="menu_head">Useful Links</h3>
@@ -46,7 +46,7 @@ const Footer = () => {
 
                 </div>
                 
-                <div className="col-sm-3">
+                <div className="col-lg-3">
 
                     <div className="content">
                         <h3 className="menu_head">Contact Me</h3>
@@ -65,7 +65,7 @@ const Footer = () => {
                     
                     </div>
     
-                    <div className="col-sm-3">
+                    <div className="col-lg-3">
                 
                         <div className="content">
                     
@@ -94,7 +94,7 @@ const Footer = () => {
     
                 <div className="row footer_2">
                 
-                    <div className="col-sm-6 cf">
+                    <div className="col-lg-6 cf">
                         <div className="footer_bottom">
                             <ul className="social-contact list-inline">
                                 <li> <a href="https://www.facebook.com/kardinal.kay"><FaFacebookF/></a></li>
@@ -107,7 +107,7 @@ const Footer = () => {
                         </div>
                     </div>
     
-                    <div className="col-sm-6">
+                    <div className="col-lg-6">
                         <div className="footer_bottom text-right">
                             <p className="text-block copyright">Copyright &copy; {getYear()} <span> CODE SECTOR</span></p>
                         </div>
