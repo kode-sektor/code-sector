@@ -21,7 +21,7 @@ class Header extends React.Component {
             <header id="page-header" className="page-header">
     
                 <Link className="brand" to="/">
-                    <img src="images/images/kode-sektor-logo-sm.png"/>
+                    <img src="images/images/kode-sektor-logo-sm.png" alt="logo"/>
                 </Link>
             
                 <div id="subpage-header" className="subpage-header">

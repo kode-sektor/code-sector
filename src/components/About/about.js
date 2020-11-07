@@ -257,7 +257,6 @@ class about extends React.Component {
 
 		        	                {this.state.faq.map((value, i) => {
 
-										let markedBody;
 		        	                	let {header, body} = value.fields
 		        	                	// console.log(value.fields)
 		        	                	body = body.content[0].content[0].value
