@@ -49,13 +49,13 @@ class about extends React.Component {
 		                
 		                <div className="row">
 		                
-		                    <div className="col-sm-4">
+		                    <div className="col-md-4">
 		                        <figure className="img-frame">                
 		                            <img id="codesector-avatar" className="img-responsive" src="images/images/anonavatar.jpg" alt="about-me"/>
 		                        </figure>                  
 		                    </div>
 		                    
-		                    <div className="col-sm-8">                
+		                    <div className="col-md-8">                
 		                        
 		                        <h3 className="page-subtitle">Intro</h3>
 		                        <p className="intro">                    
@@ -84,7 +84,7 @@ class about extends React.Component {
 		        
 		        <section id="why-patronize" className="container">
 		        
-		            <div className="author-name pulse">
+		            <div className="author-name pulse d-none d-md-block">
 		            	<span>C</span>
 		            	<span>O</span>
 		            	<span>D</span>
@@ -101,7 +101,7 @@ class about extends React.Component {
                 
 						<div class="row">
 							
-							<div class="col-sm-12 text-center">                    
+							<div class="col-12 text-center">                    
 								<h3 class="page-title text-center margin-top-10">Why Websites I Build Will Serve You</h3>
 							</div>
 							
@@ -109,37 +109,37 @@ class about extends React.Component {
 						
 						<div class="row main-feature text-center">
 					
-						<div class="col-sm-3">   
-							<div class="feature-content">                            
-								<FaLightbulb className="icons" />                         
-								<h5>Lightweight</h5>                                
-								<p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>                                
+							<div class="col-md-3">   
+								<div class="feature-content">                            
+									<FaLightbulb className="icons" />                         
+									<h5>Lightweight</h5>                                
+									<p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>                                
+								</div>
 							</div>
-						</div>
+								
+							<div class="col-md-3">
+								<div class="feature-content">                            
+									<FaPencilAlt className="icons" />                             
+									<h5>Beautiful Typrography</h5>                                
+									<p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>                                
+								</div>
+							</div> 
 							
-						<div class="col-sm-3">
-							<div class="feature-content">                            
-								<FaPencilAlt className="icons" />                             
-								<h5>Beautiful Typrography</h5>                                
-								<p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>                                
+							<div class="col-md-3">
+								<div class="feature-content">                            
+									<FaCog className="icons"/>                               
+									<h5>Full time Support</h5>                                
+									<p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you won't be outdated anytime soon. Really!! </p>                                
+								</div>
 							</div>
-						</div> 
-						
-						<div class="col-sm-3">
-							<div class="feature-content">                            
-								<FaCog className="icons"/>                               
-								<h5>Full time Support</h5>                                
-								<p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you won't be outdated anytime soon. Really!! </p>                                
+							
+							<div class="col-md-3">
+								<div class="feature-content">                            
+									<FaDesktop className="icons"/>                               
+									<h5>Ultra Responsive</h5>                                
+									<p>Website is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>                                
+								</div>
 							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="feature-content">                            
-								<FaDesktop className="icons"/>                               
-								<h5>Ultra Responsive</h5>                                
-								<p>Website is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>                                
-							</div>
-						</div>
 
 						</div>
 						
@@ -153,7 +153,7 @@ class about extends React.Component {
 		                            
 		            <div className="row">
 		        
-		                <section className="col-sm-6">
+		                <section className="col-md-6">
 		               
 		                    <h3 className="page-title skills">Skill Set</h3>
 		                        
