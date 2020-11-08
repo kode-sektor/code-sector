@@ -1,6 +1,6 @@
 # Website Reconstruction
 
-Old Site (traditional) : https://www.code-sector.com
+Old Site (traditional) : https://www.code-sector.com <br/><br/>
 Hosted Site: 
 
 <img src="/public/images/projects/code-sector.png" alt="project poster">

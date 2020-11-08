@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 import { FaEnvelope, FaPen, FaRocket, FaDesktop } from 'react-icons/fa'
 
@@ -61,7 +60,7 @@ const designProcess = () => {
                 </div>
 
                 <div className="col-md-12 text-center"> 
-                    <Link to="/contact" className="get-started btn btn-info primary-btn">Get Started</Link>
+                    <a href="/contact" className="get-started btn btn-info primary-btn">Get Started</a>
                 </div>
             
                 <div className="underlay-1">                
@@ -70,8 +69,6 @@ const designProcess = () => {
 
             </div>
 
-            
-        
         </section>
     )
 }
