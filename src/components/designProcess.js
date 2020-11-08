@@ -61,21 +61,13 @@ const designProcess = () => {
                 </div>
 
                 <div className="col-md-12 text-center"> 
-                    <Link to="/contact#contact-page" className="get-started btn btn-info primary-btn">Get Started</Link>
+                    <Link to="/contact" className="get-started btn btn-info primary-btn">Get Started</Link>
                 </div>
             
                 <div className="underlay-1">                
                     <h3 className="title-blurb"><span>Your mission critical projects</span><span style={{marginLeft: '2cm'}}> demand</span> <span><em> clarity.</em></span> <span>Code Sector</span> <span> delivers.</span></h3>                
                 </div>
-                
-                <div className="underlay-2">                
-                    <div className="underlay-wrap">                    
-                        <div className="block"></div>                                            
-                        <div className="block"></div>
-                        <div className="block"></div>
-                        <div className="block"></div>                    
-                    </div>                
-                </div>            
+
             </div>
 
             

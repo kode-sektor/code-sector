@@ -30,7 +30,7 @@ export default class contact extends React.Component {
                                 
                             <div className="col-lg-7">  
     
-                                <h3 className="page-title contact-header">Contact Me By Mail</h3>                    
+                                <h3 className="page-title contact-header">Contact Me On Your Project</h3>                    
                                 <p>Don't know how to go about your web project? Feel free to contact about anything and you'll be gotten back to as soon as possible.</p>  
                                 <div className="status alert alert-success" style={{display: 'none'}}></div>
                                 
