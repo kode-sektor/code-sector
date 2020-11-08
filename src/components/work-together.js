@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 class workTogether extends React.Component {
 
@@ -10,10 +9,10 @@ class workTogether extends React.Component {
     render () {
 
         return (
+            
             <section id="work-together">
             
                 <div className="container-fluid sheet text-center">
-                    
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 offset-md-1 body">

@@ -1,8 +1,9 @@
 # Website Reconstruction
 
+Old Site (traditional) : https://www.code-sector.com
 Hosted Site: 
 
-<img src="src/public/images/projects/code-sector.png" alt="project poster">
+<img src="/public/images/projects/code-sector.png" alt="project poster">
 
 ## Transform my personal website into a React-powered site
 
