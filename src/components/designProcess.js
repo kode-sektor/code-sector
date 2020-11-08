@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 import { FaEnvelope, FaPen, FaRocket, FaDesktop } from 'react-icons/fa'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -56,6 +58,10 @@ const designProcess = () => {
                         </TabPanel>
                     </Tabs>
 
+                </div>
+
+                <div className="col-md-12 text-center"> 
+                    <Link to="/contact#contact-page" className="get-started btn btn-info primary-btn">Get Started</Link>
                 </div>
             
                 <div className="underlay-1">                

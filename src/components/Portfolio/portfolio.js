@@ -60,10 +60,16 @@ class portfolio extends React.Component{
             if (multipleCategories) {   // [react, apps]
                 if (Array.isArray(multipleCategories)) {
                     return multipleCategories   // returns array into tempItems array
+                } else {
+                    return ''
                 }
             }
              else { // apps
-                if (category) return category
+                if (category) {
+                    return category
+                } else {
+                    return ''
+                }
             }
         })
         let categories = Array.from(new Set(tempItems.flat())); // spreads nested multipleCategories array
@@ -126,6 +132,8 @@ class portfolio extends React.Component{
             multItems = tempItems.filter(({fields}) => {    // Check for multiple categories
                 if (fields.multipleCategories) {
                     return fields.multipleCategories.indexOf(category) !== -1
+                } else {
+                    return ''
                 }
             })
 

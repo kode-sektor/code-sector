@@ -10,7 +10,7 @@ import Header from '../header'
 import Footer from '../footer'
 
 
-export default class extends React.Component {
+export default class contact extends React.Component {
 
     render () {
 

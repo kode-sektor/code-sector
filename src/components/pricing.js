@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const pricing = () => {
     
@@ -29,7 +30,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                    <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                 </li>                                
                             </ul>
                             
@@ -54,7 +55,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                    <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                 </li>                                
                             </ul>
                             
@@ -77,7 +78,7 @@ const pricing = () => {
                                 <li>Free Email Web Address</li>
                                 <li>Free Hosting + Domain</li>
                                 <li>
-                                    <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                    <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                 </li>                                
                             </ul>                            
                         </div>                       

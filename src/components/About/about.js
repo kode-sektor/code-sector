@@ -268,7 +268,7 @@ class about extends React.Component {
 			                                        <AccordionItemButton>
 			                                            <div className="panel-heading">
 							                                <h4 className="panel-title">
-							                                    <a className="accordion-toggle" href="javascript:void(0)" data-parent="#accordion" data-toggle="collapse">
+							                                    <a onClick={(e) => e.preventDefault()} className="accordion-toggle" href="/" data-parent="#accordion" data-toggle="collapse">
 							                                        {header}  
 							                                    </a>
 							                                </h4>

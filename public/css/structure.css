@@ -2070,9 +2070,12 @@ h5 small {
 	background: #FF2000;
 	color: white;
 	font-size: 1.3em;
+	font-weight: bold;
 	color: black;
+
 	padding-left: 30px;
 	padding-right: 30px;
+	font-family: var(--font-tertiary);
 }
 .btn.get-started:hover {
 	background: black;
