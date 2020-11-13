@@ -51,7 +51,7 @@ class Header extends React.Component {
                                     <li className={this.state.path==='/portfolio' ? 'marked' : ''}><Link to="/portfolio">Portfolio</Link></li>
                                     <li className={this.state.path==='/about' ? 'marked' : ''}><Link to="/about">Who am I?</Link></li>
                                     <li className={(this.state.path==='/contact' && this.state.hash!=='#contact-page') ? 'marked' : ''}><Link to="/contact">Contact</Link></li>
-                                    <li className={this.state.hash==='#contact-page' ? 'marked' : ''}><Link class="cta-free-quote" to="/contact#contact-page">Get Free Quote</Link></li>
+                                    <li className={this.state.hash==='#contact-page' ? 'marked' : ''}><Link className="cta-free-quote" to="/contact#contact-page">Get Free Quote</Link></li>
                                 </ul>
                             </nav>
                         </div>

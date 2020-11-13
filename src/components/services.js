@@ -17,7 +17,7 @@ class services extends React.Component {
 
     render () {
 
-        console.log(this.state.services)
+        // console.log(this.state.services)
         
         return (
         

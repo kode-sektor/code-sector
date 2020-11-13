@@ -79,8 +79,8 @@ function dynamicForm () {
                         </div>
                         <FieldArray name="tickets">
                         {() => (values.tickets.map((ticket, i) => {
-                            const ticketErrors = errors.tickets?.length && errors.tickets[i] || {};
-                            const ticketTouched = touched.tickets?.length && touched.tickets[i] || {};
+                            const ticketErrors = (errors.tickets?.length && errors.tickets[i]) || {};
+                            const ticketTouched = (touched.tickets?.length && touched.tickets[i]) || {};
                             return (
                                 <div key={i} className="list-group list-group-flush">
                                     <div className="list-group-item">
