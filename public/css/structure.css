@@ -117,6 +117,7 @@
 	--font-primary: Dosis, Tahoma, Calibri, sans-serif;
 	--font-secondary: Titillium, Tahoma, Calibri, sans-serif;
 	--font-tertiary: "Century Gothic", Tahoma, Calibri, sans-serif;
+	--font-extra: Rajdhani, Georgia, sans-serif;
   
   } 
 
@@ -167,7 +168,7 @@ html{
 body{
 	min-height:100%;
 	padding-top: ; /*if header is fixed, so that next content won't be behind header. Padding-top should be equal height of header*/
-	font: 14px Rajdhani, "Trebuchet MS", sans-serif !important;
+	font: 14px var(--font-extra), "Trebuchet MS", sans-serif !important;
 	color:#6a6a6a; 
 	background-image: ;    
 	letter-spacing:0.075em;
@@ -298,7 +299,7 @@ h2 {
 	font-size: 26px;
 }
 p {
-	font-family: Rajdhani, Corbel, sans-serif;
+	font-family: var(--font-extra), Corbel, sans-serif;
 	font-size: 1.3em;
 }
 hr {
@@ -325,7 +326,7 @@ dt, dd {
     line-height: normal;
     font-weight: normal;
     margin-bottom: 7px;
-    font-family: Rajdhani, sans-serif;
+    font-family: var(--font-extra), sans-serif;
 }
 
 /*4. LINKS*
@@ -432,7 +433,7 @@ form input[type='checkbox'], form input[type='radio'] {
 	margin-right: 9px;
 }
 form select {
-	font-family: Rajdhani, sans-serif;
+	font-family: var(--font-extra), sans-serif;
 	cursor: pointer;
 }
 form label {
@@ -1270,7 +1271,7 @@ ul.disc { list-style: disc outside; }
     line-height: 24px;
     margin: 23px 0px 25px 0px;
 	text-transform: uppercase;
-	font-family: 'Rajdhani', Corbel, sans-serif;
+	font-family: 'var(--font-extra)', Corbel, sans-serif;
 }
 .footer_1 .menu_head:before {
     content: "";
@@ -1700,7 +1701,7 @@ a[class*=carousel-control].next {
 }
 .service .section-header ~ .block * {
 	font-size: 1.1em;
-	font-family: Rajdhani, sans-serif;	
+	font-family: var(--font-extra), sans-serif;	
 }
 .service .work p:last-of-type {
 	margin-bottom: 0;
@@ -1788,7 +1789,7 @@ a[class*=carousel-control].next {
     float: left;
     font-weight: 400;
     padding: 9px 10px;
-	font-family: "Rajdhani", "century gothic";
+	font-family: "var(--font-extra)", "century gothic";
     position: relative;
     background-color: #39b3d7;	
 }
@@ -2068,14 +2069,16 @@ h5 small {
 }
 .btn.get-started {
 	background: #FF2000;
-	color: white;
+	color: white !important;
 	font-size: 1.3em;
-	font-weight: bold;
 	color: black;
+	font-weight: bolder;
+	text-transform: uppercase;
 
 	padding-left: 30px;
 	padding-right: 30px;
-	font-family: var(--font-tertiary);
+	border: none;
+	font-family: var(--font-extra) !important;
 }
 .btn.get-started:hover {
 	background: black;
@@ -2115,7 +2118,7 @@ h5 small {
 #contact p {
 	margin: 0 0 20px;
 	font-size: 1.1em;
-	font-family: Rajdhani, sans-serif;
+	font-family: var(--font-extra), sans-serif;
 }
 #contact .alert {
     padding: 15px;
@@ -2319,7 +2322,7 @@ h5 small {
 	line-height: 2;
 }
 .page-subtitle {
-	font: 22px/30px 'Rajdhani', sans-serif;
+	font: 22px/30px 'var(--font-extra)', sans-serif;
     color: #fff;
     margin-bottom: 19px;
 }

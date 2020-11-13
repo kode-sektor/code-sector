@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class pricing extends React.Component {
 
@@ -31,7 +32,7 @@ export default class pricing extends React.Component {
                                     <li>Free Email Web Address</li>
                                     <li>Free Hosting + Domain</li>
                                     <li>
-                                        <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                        <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                     </li>                                
                                 </ul>
                                 
@@ -56,7 +57,7 @@ export default class pricing extends React.Component {
                                     <li>Free Email Web Address</li>
                                     <li>Free Hosting + Domain</li>
                                     <li>
-                                        <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                        <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                     </li>                                
                                 </ul>
                                 
@@ -79,7 +80,7 @@ export default class pricing extends React.Component {
                                     <li>Free Email Web Address</li>
                                     <li>Free Hosting + Domain</li>
                                     <li>
-                                        <a href="/contact#contact-page" className="plan-btn color">Get started</a>
+                                        <Link to="/contact#contact-page" className="plan-btn color">Get started</Link>
                                     </li>                                
                                 </ul>                            
                             </div>                       

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { FaYoutube, FaTwitter, FaLinkedinIn, FaGithub, FaGooglePlusG, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
@@ -23,10 +24,10 @@ const Footer = () => {
                             <h3 className="menu_head">Main Menu</h3>
                             <div className="footer_menu">                           
                             <ul>                        
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
-                                <li><a href="/about">Who am I?</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/portfolio">Portfolio</Link></li>
+                                <li><Link to="/about">Who am I?</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>                               
                         </div>                       
                     </div>
