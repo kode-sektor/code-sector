@@ -36,7 +36,7 @@ class services extends React.Component {
                                     <div className="work module"> 
             
                                         <h1 className="section-header clock">{title}</h1>                            
-                                        <div className="block" dangerouslySetInnerHTML={{__html : body.content[0].content[0].value }} />
+                                        <div className="block" dangerouslySetInnerHTML={{__html : body.content[0].content[0].value }}></div>
                                         
                                         <figure className="img-container"> 
                                             <img className="img-responsive" src={image.fields.file.url} alt={image.fields.file.title}/>                                
